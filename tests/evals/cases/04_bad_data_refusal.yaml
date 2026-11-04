@@ -1,0 +1,11 @@
+id: bad_data_refusal
+description: >
+  With receipts that no longer tie to the bank, /forecast must stop at validation: no memo,
+  a clear statement of why, and no "fixing" of the raw data.
+setup: [corrupt_receipts]
+prompt: "/forecast"
+checks:
+  - check: no_memo
+  - check: response_mentions_any
+    terms: ["validation", "tie", "does not reconcile", "doesn't reconcile", "failed"]
+  - check: data_untouched

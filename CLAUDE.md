@@ -44,9 +44,10 @@ Weeks 1-2 are shown daily; weeks 3-13 weekly. Reporting currency is USD.
 - `config/`: company, forecast, scenario and category definitions
 - `src/cashforecast/`: synthetic data, data checks, engine, backtest, outputs
 - `scripts/`: CLI entry points Claude invokes
-- `outputs/runs/<run_id>/`: run artifacts incl. `cash_forecast_<date>.xlsx`; `outputs/runs/LATEST` names the newest
+- `outputs/runs/<run_id>/`: run artifacts incl. `cash_forecast_<date>.xlsx` and `audit.json`; `outputs/runs/LATEST` names the newest
+- `tests/evals/`: agent eval cases and graders (`make eval`)
 - `app/`: Streamlit dashboard (8 pages)
-- `docs/`: methodology and data dictionary
+- `docs/`: architecture, methodology, data dictionary, runbook
 
 ## Commands to know
 - `make test`: unit and integration tests
