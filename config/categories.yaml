@@ -1,4 +1,6 @@
-# Direct-method cash flow categories used across engine, workbook and dashboard
+# Direct-method cash flow categories used across engine, workbook and dashboard.
+# The bank ledger books all customer receipts as `customer_collections`; the engine
+# splits forecast collections into the three sub-categories below.
 receipts:
   - customer_collections_existing_ar
   - customer_collections_renewals
@@ -15,6 +17,7 @@ disbursements:
     - marketing_programs
     - rent_facilities
     - other_ap
+    - bank_fees
   non_operating:
     - debt_principal
     - debt_interest

@@ -3,55 +3,99 @@ company:
   name: Northwind Cloud, Inc.
   reporting_currency: USD
   fiscal_year_end_month: 12
-  history_months: 24
+
+simulation:
   history_start: "2024-11-01"
+  as_of: "2026-11-01"          # forecast date; history runs through the day before
+  holdout_weeks: 13            # simulated "future actuals" kept aside for variance tests
+  seed: 42
 
 entities:
   - { code: US01, name: Northwind Cloud Inc., currency: USD, arr_share: 0.70 }
   - { code: UK01, name: Northwind Cloud Ltd., currency: GBP, arr_share: 0.20 }
   - { code: CA01, name: Northwind Cloud Canada ULC, currency: CAD, arr_share: 0.10 }
 
+fx:
+  start: { GBP: 1.27, CAD: 0.74 }   # USD per unit of local currency
+  daily_vol: 0.004
+
 revenue:
-  starting_arr: 210_000_000
-  ending_arr_target: 250_000_000
+  starting_arr: 190_000_000         # grows to ~$250M via net retention and new logos
   gross_retention: 0.90
   net_retention: 1.10
-  billing_mix: { annual: 0.60, quarterly: 0.25, monthly: 0.15 }
-  q4_bookings_weight: 0.38          # share of annual bookings landing in Q4
+  new_logos_per_year: 110
+  new_logo_size_factor: 0.7         # new logos start smaller than the installed base
+  q4_bookings_weight: 0.38
+  renewal_slip_rate: 0.08           # renewals invoiced 15-45 days late
   bad_debt_rate: 0.005
-
-customers:
-  count: 1200
-  archetypes:
-    enterprise:  { share: 0.15, terms_days: [45, 60], mean_days_late: 18, sd_days_late: 12, portal_payer: true }
-    mid_market:  { share: 0.45, terms_days: [30],     mean_days_late: 6,  sd_days_late: 6 }
-    smb:         { share: 0.40, terms_days: [0, 30],  mean_days_late: 2,  sd_days_late: 3, card_share: 0.6 }
-  whales: { count: 5, ar_concentration: 0.20 }
   dispute_rate: 0.02
   partial_payment_rate: 0.03
 
-expenses:
-  payroll_share_of_opex: 0.62
-  headcount: 1100
+customers:
+  existing_count: 1000
+  whales: { count: 5, arr_share: 0.145, churn: 0.02 }
+  archetypes:
+    enterprise:
+      count_share: 0.15
+      arr_share: 0.60               # of non-whale ARR
+      terms_days: [45, 60]
+      mean_days_late: 18
+      sd_days_late: 12
+      churn: 0.06
+      billing_mix: { annual: 0.65, quarterly: 0.35, monthly: 0.0 }
+    mid_market:
+      count_share: 0.45
+      arr_share: 0.30
+      terms_days: [30]
+      mean_days_late: 6
+      sd_days_late: 6
+      churn: 0.10
+      billing_mix: { annual: 0.40, quarterly: 0.40, monthly: 0.20 }
+    smb:
+      count_share: 0.40
+      arr_share: 0.10
+      terms_days: [0, 30]
+      mean_days_late: 2
+      sd_days_late: 3
+      churn: 0.18
+      card_share: 0.6
+      billing_mix: { annual: 0.30, quarterly: 0.10, monthly: 0.60 }
+
+expenses:                           # annual rates as a share of current ARR unless noted
+  payroll_pct_arr: 0.48
+  payroll_net_share: 0.70           # rest is withholding + employer taxes/benefits
   payroll_frequency: { US01: biweekly, UK01: monthly, CA01: semimonthly }
-  commission_rate_of_bookings: 0.10
-  commission_lag_months: 1
   bonus_month: 3
-  cloud_hosting_pct_of_revenue: 0.14
-  cloud_commit_prepay_month: 1
-  ap_payment_runs: [Tue, Fri]
+  bonus_pct_annual_payroll: 0.06
+  commission_rate_of_bookings: 0.10
+  cloud_hosting_pct_arr: 0.12
+  cloud_commit_prepay: { month: 1, pct_annual: 0.15 }
+  software_pct_arr: 0.05
+  marketing_pct_arr: 0.07
+  marketing_event_months: [3, 6, 10]
+  other_ap_pct_arr: 0.04
+  rent_annual_usd: 7_000_000
+  ap_payment_runs: [1, 4]           # Tuesday, Friday (Monday = 0)
   vendor_count: 400
 
 balance_sheet:
-  opening_cash: 85_000_000
-  term_loan: { principal: 60_000_000, rate: 0.075, amortization_quarterly: 1_500_000 }
-  revolver: { limit: 40_000_000, drawn: 0, rate: 0.08 }
+  opening_cash: 60_000_000
+  interest_income_rate: 0.03
+  term_loan: { principal: 60_000_000, rate: 0.075, quarterly_amortization: 1_500_000 }
+  revolver: { limit: 40_000_000, drawn: 0, rate: 0.08, undrawn_fee: 0.0025 }
   covenants: { min_liquidity: 30_000_000 }
 
 capex:
   annual_budget: 6_000_000
+  projects_per_year: 10
   slippage_mean_days: 21
 
 tax:
-  us_estimated_quarterly: true
-  uk_vat_quarterly: true
+  us_estimated_quarterly_usd: 1_500_000
+  us_due_dates: ["04-15", "06-15", "09-15", "12-15"]
+  uk_vat_rate_net: 0.10             # net VAT remitted as share of UK billings
+
+anomalies:                          # injected into history before as_of, logged in manifest
+  - whale_late_payment
+  - duplicate_ap_payment
+  - customer_default
