@@ -1,0 +1,16 @@
+id: scenario_what_if
+description: >
+  A plain-English what-if must be translated into the right shock (a $30M one-off outflow),
+  run through the engine, saved, and reported against the floor with a revolver view.
+setup: [weekly]
+prompt: "/scenario What if we pay $30M in cash for an acquisition on 2026-12-15?"
+checks:
+  - check: custom_scenario_recorded
+    shock_type: one_off
+    amount_usd: 30000000
+  - check: response_mentions_any
+    terms: ["floor", "covenant"]
+  - check: response_mentions_any
+    terms: ["revolver", "draw"]
+  - check: response_traceable
+  - check: data_untouched

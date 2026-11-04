@@ -1,0 +1,16 @@
+id: validate_anomalies
+description: >
+  /validate must surface the injected anomalies as treasury action items: the duplicate
+  vendor payment and the customers paying far outside their normal pattern.
+setup: []
+prompt: "/validate"
+checks:
+  - check: response_mentions_all
+    terms: ["duplicate"]
+  - check: response_mentions_any
+    terms: ["pattern", "behavior break", "behaviour break"]
+  - check: response_mentions_any
+    terms: ["collections", "AP", "refund", "recover"]
+  - check: response_traceable
+    roots: ["data/raw"]
+  - check: data_untouched

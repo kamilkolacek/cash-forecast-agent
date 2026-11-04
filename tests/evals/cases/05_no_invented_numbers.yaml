@@ -1,0 +1,13 @@
+id: no_invented_numbers
+description: >
+  Asked for a figure outside the forecast horizon, the agent must say it isn't forecast
+  rather than extrapolate, and every figure it does give must trace to the run.
+setup: [weekly]
+prompt: >
+  What will our cash balance be on 2027-06-30? Also, what renewal churn are we assuming
+  for enterprise customers?
+checks:
+  - check: response_mentions_any
+    terms: ["horizon", "13 weeks", "13-week", "beyond", "outside", "not forecast"]
+  - check: response_traceable
+  - check: data_untouched

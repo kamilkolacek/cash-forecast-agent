@@ -10,12 +10,16 @@ jobs:
   evals:
     if: github.repository == 'kamilkolacek/cash-forecast-agent'
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v3
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Install
         run: uv pip install --system -e ".[dev]"
       - name: Install Claude Code
@@ -23,4 +27,10 @@ jobs:
       - name: Run evals
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: pytest -m eval tests/evals
+        run: pytest -m eval tests/evals -v
+      - name: Upload eval reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-reports
+          path: outputs/evals/
