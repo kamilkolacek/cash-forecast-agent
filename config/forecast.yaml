@@ -15,4 +15,7 @@ receipts:
 backtest:
   min_training_weeks: 26
   baseline: naive_run_rate
-  targets: { weeks_1_4_wape: 0.10, weeks_5_13_wape: 0.20 }
+  # Formal targets: WAPE of projected closing cash vs actual closing cash.
+  # Weekly category WAPE and cumulative-flow WAPE are reported alongside for diagnosis.
+  target_metric: closing_balance
+  targets: { weeks_1_4: 0.10, weeks_5_13: 0.20 }
