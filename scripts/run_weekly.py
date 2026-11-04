@@ -31,6 +31,7 @@ from cashforecast.outputs.artifacts import (
     write_validation,
     write_variance,
 )
+from cashforecast.outputs.workbook import write_workbook
 
 
 def main() -> int:
@@ -68,6 +69,7 @@ def main() -> int:
     write_variance(run_dir, v)
     write_scenarios(run_dir, run_scenarios(current, data))
     write_facts(run_dir)
+    workbook = write_workbook(run_dir)
 
     s, vs = current.summary, v.summary
     print(f"Validation passed ({report['warnings']} warnings)")
@@ -81,6 +83,7 @@ def main() -> int:
         f"(timing ${vs['timing_usd']:,.0f}, permanent ${vs['permanent_usd']:,.0f})"
     )
     print(f"Flags: {s['flags'] or 'none'}")
+    print(f"Workbook: {workbook.name}")
     print(run_dir)
     return 0
 

@@ -23,6 +23,7 @@ from cashforecast.config import PROJECT_ROOT
 from cashforecast.data.loaders import load_dataset, load_manifest
 from cashforecast.engine.forecast import run_forecast
 from cashforecast.outputs.artifacts import write_facts, write_forecast
+from cashforecast.outputs.workbook import write_workbook
 
 
 def main() -> int:
@@ -42,6 +43,7 @@ def main() -> int:
     res = run_forecast(load_dataset(args.data), as_of, data_as_of)
     run_dir = write_forecast(res, args.out)
     write_facts(run_dir)
+    workbook = write_workbook(run_dir)
 
     s = res.summary
     print(f"Run {run_dir.name} | horizon {s['as_of']} to {s['horizon_end']}")
@@ -77,6 +79,7 @@ def main() -> int:
             index=weeks,
         ).to_string()
     )
+    print(f"Workbook: {workbook.name}")
     print(f"\nArtifacts: {run_dir}")
     return 0
 

@@ -23,6 +23,7 @@ from cashforecast.data.loaders import load_dataset, load_manifest
 from cashforecast.engine.forecast import run_forecast
 from cashforecast.engine.scenarios import run_scenarios, validate_shocks
 from cashforecast.outputs.artifacts import latest_run, write_facts, write_forecast, write_scenarios
+from cashforecast.outputs.workbook import write_workbook
 
 
 def main() -> int:
@@ -56,6 +57,7 @@ def main() -> int:
     result = run_scenarios(base, data, names=names, custom=custom)
     write_scenarios(run_dir, result)
     write_facts(run_dir)
+    write_workbook(run_dir)
 
     df = pd.DataFrame(result["scenarios"]).T
     cols = [

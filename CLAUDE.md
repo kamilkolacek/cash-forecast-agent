@@ -32,7 +32,7 @@ Weeks 1-2 are shown daily; weeks 3-13 weekly. Reporting currency is USD.
 | `/scenario` | Named scenario or plain-English what-if |
 | `/cash-memo` | (Re)write the CFO memo for the latest run |
 | `/backtest` | Walk-forward accuracy report |
-| `/dashboard` | Launch the Streamlit dashboard (Phase 6) |
+| `/dashboard` | Launch the Streamlit dashboard |
 
 ## Skills and subagents
 - Skills (`.claude/skills/`): `cash-forecasting`, `saas-receipts`, `variance-analysis`,
@@ -44,7 +44,8 @@ Weeks 1-2 are shown daily; weeks 3-13 weekly. Reporting currency is USD.
 - `config/`: company, forecast, scenario and category definitions
 - `src/cashforecast/`: synthetic data, data checks, engine, backtest, outputs
 - `scripts/`: CLI entry points Claude invokes
-- `outputs/runs/<run_id>/`: run artifacts; `outputs/runs/LATEST` names the newest
+- `outputs/runs/<run_id>/`: run artifacts incl. `cash_forecast_<date>.xlsx`; `outputs/runs/LATEST` names the newest
+- `app/`: Streamlit dashboard (8 pages)
 - `docs/`: methodology and data dictionary
 
 ## Commands to know
