@@ -3,25 +3,6 @@
 from __future__ import annotations
 
 import pandas as pd
-import pytest
-
-from cashforecast.config import load_yaml
-from cashforecast.data.loaders import load_dataset, load_manifest
-from cashforecast.data.validation import validate
-from cashforecast.synthetic.generator import generate
-
-
-@pytest.fixture(scope="session")
-def dataset(tmp_path_factory):
-    out = tmp_path_factory.mktemp("data")
-    generate(out)
-    d = load_dataset(out)
-    m = load_manifest(out)
-    hold = load_dataset(out, holdout=True)
-    report = validate(
-        d, load_yaml("company.yaml")["balance_sheet"]["opening_cash"], pd.Timestamp(m["as_of"])
-    )
-    return d, hold, m, report
 
 
 def _finding(report, check):

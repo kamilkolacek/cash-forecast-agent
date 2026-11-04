@@ -4,7 +4,7 @@ A Claude Code agent that produces a **13-week direct-method cash forecast** for 
 fictional B2B SaaS company, with variance analysis, scenarios, liquidity risk flags,
 a CFO memo, and a Streamlit dashboard. All data is synthetic.
 
-> **Status:** Phase 1 (synthetic data). See the roadmap below.
+> **Status:** Phase 2–3 (forecast engine and backtest). See the roadmap below.
 
 ## How it works
 
@@ -33,10 +33,23 @@ cd cash-forecast-agent
 make setup        # create venv, install, enable pre-commit
 make test         # run tests
 make data         # generate synthetic data (~30s)
+make forecast     # run the 13-week forecast
+make backtest     # walk-forward accuracy report (~20s)
 make dashboard    # launch the web UI (Phase 6)
 ```
 
 Then open the project in Claude Code and run `/forecast`.
+
+## Accuracy (seed 42)
+
+Walk-forward backtest over 33 cutoffs; WAPE of projected closing cash vs actual:
+
+| Horizon | Engine | Naive baseline | Target |
+|---|---|---|---|
+| Weeks 1–4 | 4.5% | 8.8% | ≤10% |
+| Weeks 5–13 | 6.0% | 20.2% | ≤20% |
+
+See [docs/methodology.md](docs/methodology.md) for methods and metric definitions.
 
 ## Slash commands
 
@@ -55,7 +68,7 @@ Then open the project in Claude Code and run `/forecast`.
 
 - [x] Phase 0: Scaffold, config, CI
 - [x] Phase 1: Synthetic data generator (`v0.1-data`)
-- [ ] Phase 2–3: Forecast engine and backtest (`v0.1`)
+- [x] Phase 2–3: Forecast engine and backtest (`v0.1`)
 - [ ] Phase 4–5: Claude Code layer: skills, commands, subagents, hooks (`v0.2`)
 - [ ] Phase 6: Excel workbook, CFO memo, Streamlit dashboard (`v0.3`)
 - [ ] Phase 7–8: Evals and hardening (`v1.0`)
