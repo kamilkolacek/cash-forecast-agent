@@ -5,7 +5,7 @@ from __future__ import annotations
 import pandas as pd
 import streamlit as st
 from components.charts import balance_lines
-from components.kpis import kpi_row, m, status_badge
+from components.kpis import kpi_row, m, md, status_badge
 from components.loaders import artifact, select_run
 
 st.set_page_config(page_title="Cash Forecast", page_icon="💵", layout="wide")
@@ -59,9 +59,9 @@ with right:
     if val:
         for f in val["findings"]:
             if f["severity"] == "WARNING" and not f["passed"]:
-                st.warning(f"**{f['check'].split(':')[1].replace('_', ' ')}**: {f['detail']}")
+                st.warning(md(f"**{f['check'].split(':')[1].replace('_', ' ')}**: {f['detail']}"))
             elif f["severity"] == "INFO":
-                st.info(f["detail"])
+                st.info(md(f["detail"]))
     else:
         st.caption("No validation results saved with this run.")
     var = artifact(run, "variance.json")
@@ -71,7 +71,7 @@ with right:
         st.metric(
             "Variance",
             m(vs["total_variance_usd"]),
-            f"timing {m(vs['timing_usd'])} · permanent {m(vs['permanent_usd'])}",
+            md(f"timing {m(vs['timing_usd'])} · permanent {m(vs['permanent_usd'])}"),
             delta_color="off",
         )
 
@@ -79,7 +79,7 @@ memo = artifact(run, "memo.md")
 st.divider()
 if memo:
     with st.expander("CFO memo for this run", expanded=True):
-        st.markdown(memo)
+        st.markdown(md(memo))
 else:
     st.caption("No memo yet for this run. In Claude Code, run `/cash-memo`.")
 
