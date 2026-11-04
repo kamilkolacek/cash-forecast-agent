@@ -1,0 +1,798 @@
+forecast_window,actual_window,prior_forecast_to_comparison_end,reforecast_rest,variance,permanent,timing,classification,driver,type,archetype,is_whale,forecast_basis
+0.0,4037048.61,2018524.3,0.0,4037048.61,2018524.31,2018524.3,permanent,C00005,customer,enterprise,True,behavior break: 50% weighted
+5885274.03,0.0,9808790.05,9808790.05,-5885274.03,0.0,-5885274.03,timing,C00001,customer,enterprise,True,on pattern
+477627.06,0.0,2162867.98,2163162.3,-477627.06,294.32,-477921.38,timing,C01020,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93; renewal 2/4, p_renew=0.93"
+0.0,0.0,0.0,337033.0,0.0,337033.0,-337033.0,timing,C01231,customer,enterprise,False,
+0.0,0.0,1263060.18,927643.23,0.0,-335416.95,335416.95,timing,unassigned_pipeline,customer,,False,"stage 3, p=0.4; stage 4, p=0.6; stage 5, p=0.8"
+-3393043.47,-3441893.78,-46702113.01,-43518908.54,-48850.31,-258689.31,209839.0,permanent,payroll_net,category,,False,avg of last 3 regular runs; prior-year bonus
+279156.78,0.0,697891.95,688070.05,-279156.78,-9821.9,-269334.88,timing,C00027,customer,enterprise,False,on pattern
+-1318248.02,-1318248.02,-21452761.47,-20419520.94,0.0,-285007.49,285007.49,timing,cloud_hosting,category,,False,"open bill; run rate x 1.02 seasonality, 30d terms; run rate x 1.04 seasonality, 30d terms; run rate x 1.07 seasonality, 30d terms; run rate x 1.08 seasonality, "
+0.0,141168.48,0.0,0.0,141168.48,141168.48,0.0,permanent,C00887,customer,smb,False,
+149304.86,373262.17,1119786.45,746524.3,223957.31,0.02,223957.29,timing,C00083,customer,enterprise,False,installment 4/4; modestly late; on pattern
+176546.61,0.0,294244.35,298499.95,-176546.61,4255.6,-180802.21,timing,C00034,customer,enterprise,False,on pattern
+173005.55,0.0,865027.75,865027.75,-173005.55,0.0,-173005.55,timing,C00090,customer,enterprise,False,on pattern
+0.0,0.0,163929.95,327859.9,0.0,163929.95,-163929.95,timing,C00086,customer,enterprise,False,installment 3/4
+0.0,0.0,140512.0,0.0,0.0,-140512.0,140512.0,timing,C00051,customer,enterprise,False,"renewal 1/4, p_renew=0.93; renewal 2/4, p_renew=0.93"
+132894.76,0.0,332236.9,337042.0,-132894.76,4805.1,-137699.86,timing,C01211,customer,enterprise,False,on pattern
+99841.83,0.0,166403.05,133122.44,-99841.83,-33280.61,-66561.22,timing,C00155,customer,mid_market,False,on pattern
+0.0,0.0,0.0,125561.5,0.0,125561.5,-125561.5,timing,C01227,customer,enterprise,False,
+0.0,0.0,0.0,112087.3,0.0,112087.3,-112087.3,timing,C01229,customer,mid_market,False,
+92154.95,0.0,460774.75,467438.85,-92154.95,6664.1,-98819.05,timing,C00109,customer,enterprise,False,on pattern
+65735.22,164338.05,460146.54,295808.49,98602.83,-0.0,98602.83,timing,C01093,customer,enterprise,False,installment 2/4; installment 3/4; modestly late
+96703.86,0.0,161173.1,161173.1,-96703.86,0.0,-96703.86,timing,C00397,customer,mid_market,False,on pattern
+-191739.76,-192495.37,-6489501.51,-6384599.97,-755.61,-87593.83,86838.22,permanent,software_vendors,category,,False,"open bill; run rate x 1.02 seasonality, 30d terms; run rate x 1.02 seasonality, 45d terms; run rate x 1.04 seasonality, 30d terms; run rate x 1.04 seasonality, "
+122425.05,204041.74,204041.75,0.0,81616.69,-0.01,81616.7,timing,C00409,customer,mid_market,False,on pattern
+-353335.32,-353518.66,-5639335.17,-5212429.2,-183.34,73387.31,-73570.65,timing,other_ap,category,,False,"open bill; run rate x 1.02 seasonality, 30d terms; run rate x 1.02 seasonality, 45d terms; run rate x 1.02 seasonality, 60d terms; run rate x 1.04 seasonality, "
+-699192.11,-714409.88,-24209829.89,-23551094.1,-15217.77,-55674.09,40456.32,permanent,payroll_taxes_benefits,category,,False,; prior-year bonus
+69608.8,0.0,348044.0,348044.0,-69608.8,0.0,-69608.8,timing,C00282,customer,mid_market,False,on pattern
+16956.16,84780.8,186517.76,101736.96,67824.64,0.0,67824.64,timing,C00592,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+57062.6,0.0,142656.5,144719.7,-57062.6,2063.2,-59125.8,timing,C00227,customer,mid_market,False,on pattern
+0.0,0.0,58285.95,116571.9,0.0,58285.95,-58285.95,timing,C00149,customer,enterprise,False,installment 3/4
+0.0,0.0,56261.8,0.0,0.0,-56261.8,56261.8,timing,C00873,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,51908.2,0.0,0.0,-51908.2,51908.2,timing,C00325,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,51846.4,0.0,0.0,-51846.4,51846.4,timing,C00289,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,99945.4,49972.7,0.0,-49972.7,49972.7,timing,C00199,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,0.0,48706.5,0.0,48706.5,-48706.5,timing,C00262,customer,mid_market,False,
+2871.64,0.0,7179.1,52893.07,-2871.64,45713.97,-48585.61,timing,C00465,customer,mid_market,False,on pattern
+0.0,5985.97,0.0,34921.22,5985.97,40907.19,-34921.22,permanent,C00618,customer,smb,False,
+29444.04,73610.09,227865.25,154182.5,44166.05,-72.66,44238.71,timing,C00508,customer,mid_market,False,"installment 4/4; modestly late; renewal 1/4, p_renew=0.90"
+64833.99,108056.64,108056.65,0.0,43222.65,-0.01,43222.66,timing,C00388,customer,mid_market,False,on pattern
+-598228.25,-598228.25,-9169786.38,-8614046.45,0.0,-42488.32,42488.32,timing,marketing_programs,category,,False,"open bill; run rate x 0.76 seasonality, 30d terms; run rate x 0.78 seasonality, 30d terms; run rate x 0.79 seasonality, 30d terms; run rate x 0.80 seasonality, "
+0.0,37055.75,33844.8,0.0,37055.75,3210.95,33844.8,timing,C00893,customer,smb,False,"renewal 1/1, p_renew=0.81"
+37470.35,0.0,424868.35,427578.0,-37470.35,2709.65,-40180.0,timing,C00098,customer,enterprise,False,installment 2/4; installment 3/4; on pattern
+0.0,0.0,0.0,40057.85,0.0,40057.85,-40057.85,timing,C00450,customer,mid_market,False,
+37746.21,0.0,62910.35,62910.35,-37746.21,0.0,-37746.21,timing,C00160,customer,mid_market,False,on pattern
+54692.13,90675.59,243585.63,152432.08,35983.46,-477.96,36461.42,timing,C00092,customer,enterprise,False,installment 3/4; installment 4/4; on pattern
+36212.36,0.0,181061.8,181061.8,-36212.36,0.0,-36212.36,timing,C00335,customer,mid_market,False,on pattern
+35909.6,0.0,133405.42,133325.68,-35909.6,-79.74,-35829.86,timing,C00509,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+23786.22,59543.75,170535.31,111093.68,35757.53,102.12,35655.41,timing,C00153,customer,enterprise,False,"modestly late; renewal 1/4, p_renew=0.93; renewal 2/4, p_renew=0.93"
+35460.36,0.0,59100.6,59100.6,-35460.36,0.0,-35460.36,timing,C00386,customer,mid_market,False,on pattern
+0.0,4225.82,0.0,25354.8,4225.82,29580.62,-25354.8,permanent,C00894,customer,smb,False,
+0.0,25516.15,43233.6,25516.15,25516.15,7798.7,17717.45,timing,C00844,customer,smb,False,"renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,68461.25,35759.5,0.0,-32701.75,32701.75,timing,C00487,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,64107.4,32053.7,0.0,-32053.7,32053.7,timing,C00230,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,13992.12,77576.88,81154.18,13992.12,17569.42,-3577.3,permanent,C00721,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+29445.59,0.0,332446.51,330374.51,-29445.59,-2072.0,-27373.59,timing,C00110,customer,enterprise,False,installment 3/4; installment 4/4; on pattern
+20843.8,52109.51,125062.8,72953.3,31265.71,0.01,31265.7,timing,C00340,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+0.0,0.0,30973.95,0.0,0.0,-30973.95,30973.95,timing,C00889,customer,smb,False,"renewal 1/1, p_renew=0.81"
+29915.01,0.0,129631.71,129631.71,-29915.01,0.0,-29915.01,timing,C00264,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+29220.01,0.0,146100.05,146100.05,-29220.01,0.0,-29220.01,timing,C00476,customer,mid_market,False,on pattern
+0.0,27902.05,174537.3,146607.8,27902.05,-27.45,27929.5,timing,C00965,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,41735.82,69652.93,0.0,27917.11,-27917.11,timing,C00307,customer,mid_market,False,behavior break: 50% weighted; installment 4/4
+0.0,0.0,0.0,26580.1,0.0,26580.1,-26580.1,timing,C01236,customer,mid_market,False,
+23464.54,0.0,117322.7,119019.5,-23464.54,1696.8,-25161.34,timing,C00176,customer,mid_market,False,on pattern
+0.0,0.0,24692.25,49384.5,0.0,24692.25,-24692.25,timing,C00358,customer,mid_market,False,installment 3/4
+23987.92,0.0,85371.35,85805.05,-23987.92,433.7,-24421.62,timing,C01077,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+23754.09,0.0,118770.45,118734.7,-23754.09,-35.75,-23718.34,timing,C01145,customer,smb,False,"renewal 1/1, p_renew=0.81"
+23574.9,0.0,117874.5,117874.5,-23574.9,0.0,-23574.9,timing,C00620,customer,smb,False,installment 1/1
+0.0,0.0,481561.45,458319.65,0.0,-23241.8,23241.8,timing,C00538,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,79429.02,102489.26,0.0,23060.24,-23060.24,timing,C01014,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90; renewal 3/4, p_renew=0.90"
+3797.55,0.0,118086.99,99095.49,-3797.55,-18991.5,15193.95,permanent,C00578,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+15166.16,37915.39,37915.4,0.0,22749.23,-0.01,22749.24,timing,C00186,customer,mid_market,False,modestly late
+4385.44,22149.3,140240.51,123047.5,17763.86,4956.29,12807.57,timing,C00283,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+11182.86,25499.78,18638.1,0.0,14316.92,6861.68,7455.24,timing,C01117,customer,smb,False,"renewal 1/1, p_renew=0.81"
+14067.22,35168.04,89108.79,53892.16,21100.82,-48.59,21149.41,timing,C00594,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+20383.78,0.0,130390.69,131056.15,-20383.78,665.46,-21049.24,timing,C00519,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,9562.3,59001.7,58995.4,9562.3,9556.0,6.3,permanent,C00840,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+18478.61,0.0,92393.05,92393.05,-18478.61,0.0,-18478.61,timing,C01113,customer,mid_market,False,on pattern
+0.0,8841.86,54857.55,54849.0,8841.86,8833.31,8.55,permanent,C00808,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,-2701046.97,-2718366.98,0.0,-17320.01,17320.01,timing,commissions,category,,False,10% of 2026-11 bookings; 10% of 2026-12 bookings; 10% of 2027-01 bookings; 10% of 2027-02 bookings; 10% of 2027-03 bookings; 10% of 2027-04 bookings
+6215.76,0.0,61193.63,72008.72,-6215.76,10815.09,-17030.85,timing,C01165,customer,mid_market,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+15735.0,0.0,39337.5,39906.4,-15735.0,568.9,-16303.9,timing,C00190,customer,mid_market,False,modestly late
+16127.44,0.0,80637.2,80637.2,-16127.44,0.0,-16127.44,timing,C01126,customer,mid_market,False,on pattern
+0.0,0.0,1124458.5,1108633.3,0.0,-15825.2,15825.2,timing,C00077,customer,enterprise,False,on pattern
+23361.66,38731.92,276605.67,238108.08,15370.26,234.33,15135.93,timing,C00417,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+3753.34,9383.35,50670.09,50670.09,5630.01,9383.35,-3753.34,permanent,C00543,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+22497.57,37495.93,97489.47,59993.52,14998.36,-0.02,14998.38,timing,C00650,customer,smb,False,installment 3/4; installment 4/4; on pattern
+58069.64,72800.61,72587.05,0.0,14730.97,213.56,14517.41,timing,C01108,customer,mid_market,False,on pattern
+14512.5,0.0,64981.31,65316.56,-14512.5,335.25,-14847.75,timing,C00394,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+2092.72,10463.62,64874.32,60688.88,8370.9,6278.18,2092.72,permanent,C00672,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,993033.8,1007523.3,0.0,14489.5,-14489.5,timing,interest_income,category,,False,3.0% on 2026-11 avg balance; 3.0% on 2026-12 avg balance; 3.0% on 2027-01 avg balance; 3.0% on 2027-02 avg balance; 3.0% on 2027-03 avg balance; 3.0% on 2027-04
+4100.48,0.0,55356.48,65607.68,-4100.48,10251.2,-14351.68,timing,C00172,customer,mid_market,False,installment 10/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+9283.38,23276.72,160605.94,137635.52,13993.34,306.3,13687.04,timing,C00240,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+13147.54,0.0,65737.7,64812.55,-13147.54,-925.15,-12222.39,timing,C00404,customer,mid_market,False,on pattern
+9632.1,19860.94,16053.5,0.0,10228.84,3807.44,6421.4,timing,C01130,customer,smb,False,"renewal 1/1, p_renew=0.81"
+4755.8,5944.76,64203.3,70148.05,1188.96,11889.51,-10700.55,permanent,C00464,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,97423.3,110496.1,0.0,13072.8,-13072.8,timing,C00491,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,13005.6,0.0,0.0,-13005.6,13005.6,timing,C01118,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+12622.23,0.0,57913.21,57880.01,-12622.23,-33.2,-12589.03,timing,C01154,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,132014.1,144558.9,0.0,12544.8,-12544.8,timing,C01006,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+11928.44,0.0,103721.93,104159.83,-11928.44,437.9,-12366.34,timing,C00180,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,1682566.9,1694561.35,0.0,11994.45,-11994.45,timing,C00019,customer,enterprise,False,installment 3/4; on pattern
+17884.44,29807.42,196728.84,166921.44,11922.98,0.02,11922.96,timing,C00549,customer,mid_market,False,installment 10/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,9736.62,61455.0,53852.56,9736.62,2134.18,7602.44,timing,C00922,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+11083.79,0.0,130237.09,129473.22,-11083.79,-763.87,-10319.92,timing,C00016,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93; renewal 2/4, p_renew=0.93"
+0.0,0.0,120200.55,131894.25,0.0,11693.7,-11693.7,timing,C00734,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,6241.08,33344.84,32453.72,6241.08,5349.96,891.12,permanent,C00876,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+17159.85,28599.73,28599.75,0.0,11439.88,-0.02,11439.9,timing,C01217,customer,mid_market,False,on pattern
+10411.81,0.0,116932.37,116199.67,-10411.81,-732.7,-9679.11,timing,C00390,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+1566.92,7899.08,48574.52,45440.68,6332.16,4765.24,1566.92,permanent,C00861,customer,smb,False,installment 10/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+1947.88,4843.88,34809.73,38137.03,2896.0,8171.18,-5275.18,permanent,C01015,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal "
+7340.52,18351.32,91756.6,73405.3,11010.8,0.02,11010.78,timing,C00419,customer,mid_market,False,installment 3/4; installment 4/4; modestly late
+2125.43,10627.16,68122.76,59798.97,8501.73,2303.37,6198.36,timing,C00347,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+42831.6,53258.76,160982.58,107346.33,10427.16,-377.49,10804.65,timing,C00435,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+39842.92,50213.48,49803.65,0.0,10370.56,409.83,9960.73,timing,C00647,customer,smb,False,installment 1/1
+0.0,0.0,763114.55,752374.75,0.0,-10739.8,10739.8,timing,C00026,customer,enterprise,False,on pattern
+2588.72,6471.79,34947.72,34947.72,3883.07,6471.79,-2588.72,permanent,C00197,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+15113.07,25056.37,70057.17,44828.32,9943.3,-172.48,10115.78,timing,C00258,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+9372.89,0.0,105264.55,104605.0,-9372.89,-659.55,-8713.34,timing,C00277,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+9278.04,0.0,46390.2,47061.15,-9278.04,670.95,-9948.99,timing,C01214,customer,mid_market,False,on pattern
+9834.2,0.0,59945.08,59935.36,-9834.2,-9.72,-9824.48,timing,C00159,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+9801.12,0.0,107812.32,107812.32,-9801.12,0.0,-9801.12,timing,C00328,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+9615.9,0.0,32053.0,32053.0,-9615.9,0.0,-9615.9,timing,C01085,customer,smb,False,installment 2/4; installment 3/4
+14020.89,23368.16,164502.97,141028.79,9347.27,-106.02,9453.29,timing,C00550,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+0.0,0.0,660664.65,651366.7,0.0,-9297.95,9297.95,timing,C01223,customer,enterprise,False,on pattern
+4473.1,5614.9,31311.7,33689.4,1141.8,7992.6,-6850.8,permanent,C00818,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+2262.2,11311.0,70128.2,58817.2,9048.8,0.0,9048.8,timing,C00304,customer,mid_market,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+13303.71,22172.83,57649.41,35476.56,8869.12,-0.02,8869.14,timing,C00506,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+7922.77,0.0,89926.27,89360.62,-7922.77,-565.65,-7357.12,timing,C00532,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,49258.2,57467.9,0.0,8209.7,-8209.7,timing,C00892,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+5369.66,13424.14,13424.15,0.0,8054.48,-0.01,8054.49,timing,C01218,customer,mid_market,False,modestly late
+7530.83,0.0,221854.23,222368.98,-7530.83,514.75,-8045.58,timing,C00278,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+0.0,4930.67,27816.6,25639.38,4930.67,2753.45,2177.22,permanent,C00754,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+7635.9,0.0,83994.9,83994.9,-7635.9,0.0,-7635.9,timing,C00560,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+0.0,3265.12,18937.58,19590.6,3265.12,3918.14,-653.02,permanent,C01094,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+4788.12,11970.32,84023.45,72053.15,7182.2,0.02,7182.18,timing,C00909,customer,smb,False,disputed; installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+6679.11,0.0,77291.81,77587.42,-6679.11,295.61,-6974.72,timing,C00431,customer,mid_market,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+0.0,0.0,350779.1,357728.1,0.0,6949.0,-6949.0,timing,C01122,customer,enterprise,False,installment 1/1
+6667.88,0.0,58919.87,58680.17,-6667.88,-239.7,-6428.18,timing,C00437,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+6350.06,0.0,71146.28,70693.05,-6350.06,-453.23,-5896.83,timing,C00573,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,13966.05,7294.95,0.0,-6671.1,6671.1,timing,C00333,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+4263.28,10658.22,73713.19,62797.14,6394.94,-257.83,6652.77,timing,C00564,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90; renewal "
+0.0,0.0,46264.3,52895.2,0.0,6630.9,-6630.9,timing,C00183,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+3216.2,0.0,23255.3,19870.2,-3216.2,-3385.1,168.9,permanent,C01200,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+6265.78,0.0,15664.45,15444.0,-6265.78,-220.45,-6045.33,timing,C01235,customer,smb,False,on pattern
+0.0,0.0,445961.2,452411.1,0.0,6449.9,-6449.9,timing,C00137,customer,enterprise,False,on pattern
+4131.4,10328.52,10328.5,0.0,6197.12,0.02,6197.1,timing,C01008,customer,mid_market,False,modestly late
+5680.55,0.0,65851.87,66228.89,-5680.55,377.02,-6057.57,timing,C00537,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+8981.01,14968.34,95797.44,80829.09,5987.33,-0.01,5987.34,timing,C00531,customer,mid_market,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+3960.82,9902.03,65644.24,55718.79,5941.21,-23.42,5964.63,timing,C00184,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+982.42,0.0,30455.02,25542.92,-982.42,-4912.1,3929.68,permanent,C00373,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; on pattern
+3854.82,9637.04,65531.94,55894.89,5782.22,-0.01,5782.23,timing,C00468,customer,mid_market,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; modestly late; on pattern
+5684.95,0.0,176233.45,176233.45,-5684.95,0.0,-5684.95,timing,C00512,customer,mid_market,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+3649.06,9223.0,22455.75,13329.44,5573.94,96.69,5477.25,timing,C00403,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+1616.1,0.0,25857.6,21817.35,-1616.1,-4040.25,2424.15,permanent,C00798,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+5649.39,0.0,175131.09,175131.09,-5649.39,0.0,-5649.39,timing,C00413,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; on pattern
+5541.54,0.0,61486.55,61481.09,-5541.54,-5.46,-5536.08,timing,C00453,customer,mid_market,False,"installment 4/4; on pattern; renewal 1/4, p_renew=0.90"
+0.0,5523.46,33140.7,27617.25,5523.46,0.01,5523.45,timing,C00773,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+21468.42,26835.53,128810.52,101975.02,5367.11,0.03,5367.08,timing,C01104,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+0.0,2603.82,15622.8,15622.8,2603.82,2603.82,0.0,permanent,C00785,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,359740.15,364943.0,0.0,5202.85,-5202.85,timing,C00053,customer,enterprise,False,on pattern
+5091.08,0.0,12727.7,12723.9,-5091.08,-3.8,-5087.28,timing,C01147,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,2632.53,13296.0,13103.0,2632.53,2439.53,193.0,permanent,C01116,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+4714.54,0.0,51783.98,52124.88,-4714.54,340.9,-5055.44,timing,C00461,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+0.0,0.0,203937.35,198883.85,0.0,-5053.5,5053.5,timing,C00168,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,338656.1,343554.0,0.0,4897.9,-4897.9,timing,C01237,customer,enterprise,False,on pattern
+4766.49,0.0,52431.39,52431.39,-4766.49,0.0,-4766.49,timing,C01119,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+1347.28,0.0,21957.86,18588.12,-1347.28,-3369.74,2022.46,permanent,C00729,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+642.48,3238.82,21065.16,19939.2,2596.34,2112.86,483.48,permanent,C00813,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/"
+4694.12,0.0,51635.32,51635.32,-4694.12,0.0,-4694.12,timing,C00520,customer,mid_market,False,installment 3/4; installment 4/4; on pattern
+0.0,4579.04,28643.55,24060.0,4579.04,-4.51,4583.55,timing,C00931,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,28333.35,23799.4,0.0,-4533.95,4533.95,timing,C00976,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,30908.5,26493.0,0.0,-4415.5,4415.5,timing,C00964,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,3539.79,21540.1,18767.14,3539.79,766.83,2772.96,timing,C00951,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+3949.23,0.0,118727.9,119013.5,-3949.23,285.6,-4234.83,timing,C00493,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; on pattern
+4208.8,0.0,10522.0,10518.8,-4208.8,-3.2,-4205.6,timing,C01139,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,29194.2,25023.6,0.0,-4170.6,4170.6,timing,C00929,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,4072.43,24434.7,20362.25,4072.43,-0.02,4072.45,timing,C00904,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+2624.22,6569.17,47346.35,40678.65,3944.95,-98.53,4043.48,timing,C00586,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; modestly late; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+4024.28,0.0,62760.94,62756.98,-4024.28,-3.96,-4020.32,timing,C01050,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+3753.14,0.0,56297.1,56297.1,-3753.14,0.0,-3753.14,timing,C00726,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+3665.39,0.0,18326.95,18326.95,-3665.39,0.0,-3665.39,timing,C01124,customer,smb,False,installment 1/1
+3648.93,0.0,40138.23,40138.23,-3648.93,0.0,-3648.93,timing,C00212,customer,mid_market,False,installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+3643.62,0.0,58297.92,58297.92,-3643.62,0.0,-3643.62,timing,C00733,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,16056.76,19616.51,0.0,3559.75,-3559.75,timing,C00528,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12
+2323.08,5807.68,40653.9,34846.2,3484.6,-0.02,3484.62,timing,C00787,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; modestly late
+3070.97,0.0,102519.5,102194.07,-3070.97,-325.43,-2745.54,timing,C00194,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+0.0,0.0,19144.2,22503.6,0.0,3359.4,-3359.4,timing,C01005,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+3330.24,0.0,30616.66,30616.66,-3330.24,0.0,-3330.24,timing,C01098,customer,smb,False,disputed; installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+3322.73,0.0,103322.44,103319.11,-3322.73,-3.33,-3319.4,timing,C00257,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+0.0,0.0,450945.15,454202.0,0.0,3256.85,-3256.85,timing,C00018,customer,enterprise,False,installment 4/4; on pattern
+3251.18,0.0,103519.08,103514.84,-3251.18,-4.24,-3246.94,timing,C00623,customer,smb,False,"behavior break: 50% weighted; installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+0.0,0.0,474991.95,471855.2,0.0,-3136.75,3136.75,timing,C00118,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+2882.62,0.0,43249.1,43457.55,-2882.62,208.45,-3091.07,timing,C00205,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+875.82,0.0,14013.12,11823.57,-875.82,-2189.55,1313.73,permanent,C00783,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+2943.64,0.0,48257.3,48182.32,-2943.64,-74.98,-2868.66,timing,C00678,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/"
+2859.72,0.0,45755.52,45755.52,-2859.72,0.0,-2859.72,timing,C00359,customer,mid_market,False,installment 10/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+2834.6,0.0,24802.75,24802.75,-2834.6,0.0,-2834.6,timing,C00814,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; on pattern
+0.0,0.0,385580.5,388331.95,0.0,2751.45,-2751.45,timing,C01101,customer,enterprise,False,installment 2/4; on pattern
+10004.28,12542.16,91651.23,79284.02,2537.88,174.95,2362.93,timing,C00505,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+2681.28,0.0,42900.48,42900.48,-2681.28,0.0,-2681.28,timing,C00455,customer,mid_market,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+1162.82,0.0,56306.18,54852.65,-1162.82,-1453.53,290.71,permanent,C00223,customer,mid_market,False,behavior break: 50% weighted; installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; modestly late; on pattern
+2581.62,0.0,38724.3,38724.3,-2581.62,0.0,-2581.62,timing,C01234,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+2315.98,0.0,35951.51,36035.26,-2315.98,83.75,-2399.73,timing,C00767,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+2342.0,0.0,72253.5,72245.8,-2342.0,-7.7,-2334.3,timing,C00664,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,324055.9,326402.45,0.0,2346.55,-2346.55,timing,C01110,customer,enterprise,False,installment 2/4; on pattern
+0.0,0.0,14439.15,12188.5,0.0,-2250.65,2250.65,timing,C00621,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+2187.48,0.0,66669.7,66658.9,-2187.48,-10.8,-2176.68,timing,C00492,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+1980.26,0.0,32118.32,32289.62,-1980.26,171.3,-2151.56,timing,C00336,customer,mid_market,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+2056.92,0.0,36433.8,36432.1,-2056.92,-1.7,-2055.22,timing,C00842,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; modestly late; renewal 1/12, p_renew=0.81"
+1997.82,0.0,61167.73,61155.19,-1997.82,-12.54,-1985.28,timing,C00884,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+1932.78,0.0,21260.58,21260.58,-1932.78,0.0,-1932.78,timing,C00539,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+0.0,0.0,262479.05,264376.85,0.0,1897.8,-1897.8,timing,C01179,customer,enterprise,False,installment 4/4; on pattern
+1865.05,0.0,65276.75,65276.75,-1865.05,0.0,-1865.05,timing,C00690,customer,smb,False,installment 1/12; installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+1678.37,0.0,50426.1,50547.45,-1678.37,121.35,-1799.72,timing,C00238,customer,mid_market,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+1751.06,0.0,30029.27,30021.44,-1751.06,-7.83,-1743.23,timing,C00937,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal "
+2634.15,4390.27,28975.65,24585.4,1756.12,0.02,1756.1,timing,C00691,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+1619.67,0.0,55577.89,55454.59,-1619.67,-123.3,-1496.37,timing,C00748,customer,smb,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+1667.52,0.0,28241.44,28235.5,-1667.52,-5.94,-1661.58,timing,C00662,customer,smb,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_r"
+1607.66,0.0,18606.1,18596.62,-1607.66,-9.48,-1598.18,timing,C00251,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+1454.96,0.0,45223.36,45353.56,-1454.96,130.2,-1585.16,timing,C00291,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,7329163.25,7330741.45,0.0,1578.2,-1578.2,timing,C00002,customer,enterprise,True,"renewal 1/1, p_renew=0.93"
+0.0,0.0,214647.5,216186.15,0.0,1538.65,-1538.65,timing,C00123,customer,enterprise,False,installment 2/4; on pattern
+1532.28,0.0,44436.12,44436.12,-1532.28,0.0,-1532.28,timing,C00834,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; on pattern
+1509.99,0.0,16994.69,16990.77,-1509.99,-3.92,-1506.07,timing,C00366,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+0.0,1501.4,9008.4,7507.0,1501.4,0.0,1501.4,timing,C01089,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+997.1,2492.77,7478.25,4985.5,1495.67,0.02,1495.65,timing,C01134,customer,smb,False,installment 2/4; installment 3/4; modestly late
+0.0,0.0,214941.9,213452.1,0.0,-1489.8,1489.8,timing,C00119,customer,enterprise,False,installment 2/4; on pattern
+-1122.25,-742.41,-30300.75,-28576.6,379.84,981.74,-601.9,permanent,bank_fees,category,,False,90-day average
+0.0,0.0,191209.25,192564.3,0.0,1355.05,-1355.05,timing,C01171,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+1336.53,0.0,41432.43,41432.43,-1336.53,0.0,-1336.53,timing,C00456,customer,mid_market,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+1288.26,0.0,38647.8,38647.8,-1288.26,0.0,-1288.26,timing,C00953,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+1271.9,2119.83,14202.97,12507.09,847.93,423.95,423.98,timing,C00629,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; modestly late; on pattern
+0.0,0.0,165423.75,166622.55,0.0,1198.8,-1198.8,timing,C00587,customer,mid_market,False,installment 3/4; on pattern
+1181.29,0.0,36167.67,36160.45,-1181.29,-7.22,-1174.07,timing,C00852,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+1118.56,0.0,18040.0,18089.69,-1118.56,49.69,-1168.25,timing,C00677,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.81"
+0.0,0.0,152071.4,153162.25,0.0,1090.85,-1090.85,timing,C00014,customer,enterprise,False,installment 2/4; on pattern
+1074.42,0.0,34312.97,34309.12,-1074.42,-3.85,-1070.57,timing,C00622,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+1070.34,0.0,5351.7,5351.7,-1070.34,0.0,-1070.34,timing,C01205,customer,smb,False,installment 2/4; installment 3/4
+1049.55,0.0,33273.3,33266.5,-1049.55,-6.8,-1042.75,timing,C00751,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+981.66,0.0,31209.38,31140.28,-981.66,-69.1,-912.56,timing,C00898,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,145234.7,146284.8,0.0,1050.1,-1050.1,timing,C01079,customer,enterprise,False,installment 3/4; on pattern
+0.0,974.15,5844.9,4870.75,974.15,-0.0,974.15,timing,C01061,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+972.1,0.0,31592.95,31592.95,-972.1,0.0,-972.1,timing,C00601,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; modestly late; on pattern
+1426.8,2377.99,15391.28,13010.88,951.19,-2.41,953.6,timing,C00978,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_ren"
+1344.24,2243.35,15227.24,12954.24,899.11,-29.65,928.76,timing,C00757,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+1203.78,1987.46,14619.18,12599.96,783.68,-31.76,815.44,timing,C01016,customer,smb,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_r"
+801.18,0.0,12818.88,12809.63,-801.18,-9.25,-791.93,timing,C00991,customer,smb,False,installment 10/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+2749.52,3471.73,23550.96,20152.53,722.21,73.3,648.91,timing,C00948,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.81"
+0.0,0.0,868312.7,867530.5,0.0,-782.2,782.2,timing,C00157,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,192819.04,192041.67,0.0,-777.37,777.37,timing,C00339,customer,mid_market,False,"disputed; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+750.8,0.0,11262.0,11262.0,-750.8,0.0,-750.8,timing,C01212,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+664.61,0.0,19997.3,20045.4,-664.61,48.1,-712.71,timing,C01069,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+693.73,0.0,21564.68,21564.45,-693.73,-0.23,-693.5,timing,C01056,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.81"
+0.0,0.0,97591.7,96899.95,0.0,-691.75,691.75,timing,C00375,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+673.58,0.0,20207.4,20207.4,-673.58,0.0,-673.58,timing,C01090,customer,mid_market,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+1003.86,1673.11,11270.3,9596.32,669.25,-0.87,670.12,timing,C00864,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+663.22,0.0,20559.82,20559.82,-663.22,0.0,-663.22,timing,C01095,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+635.79,0.0,18437.91,18437.91,-635.79,0.0,-635.79,timing,C01230,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+907.92,1513.18,10579.6,9064.1,605.26,-2.32,607.58,timing,C00716,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,630231.25,629663.55,0.0,-567.7,567.7,timing,C00355,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,72626.2,72120.85,0.0,-505.35,505.35,timing,C00525,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,2327321.75,2327822.9,0.0,501.15,-501.15,timing,C00082,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,34034.35,33555.4,0.0,-478.95,478.95,timing,C01002,customer,smb,False,on pattern
+0.0,0.0,89394.1,88941.3,0.0,-452.8,452.8,timing,C00308,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,61267.75,60838.15,0.0,-429.6,429.6,timing,C01007,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,88107.75,87695.55,0.0,-412.2,412.2,timing,C00577,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,56002.55,56407.45,0.0,404.9,-404.9,timing,C00187,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,62607.2,63009.0,0.0,401.8,-401.8,timing,C00236,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,1849800.2,1850198.55,0.0,398.35,-398.35,timing,C01031,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,1744127.75,1744503.3,0.0,375.55,-375.55,timing,C01142,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,1666441.0,1666799.85,0.0,358.85,-358.85,timing,C00132,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,396046.95,395690.2,0.0,-356.75,356.75,timing,C00204,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,356143.7,355822.9,0.0,-320.8,320.8,timing,C00351,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,342120.65,341812.5,0.0,-308.15,308.15,timing,C00356,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,341612.3,341304.55,0.0,-307.75,307.75,timing,C00553,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1390521.7,1390821.15,0.0,299.45,-299.45,timing,C00139,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,324401.5,324109.25,0.0,-292.25,292.25,timing,C00350,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1324685.4,1324970.65,0.0,285.25,-285.25,timing,C00015,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,38621.95,38900.2,0.0,278.25,-278.25,timing,C00568,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,307448.8,307171.85,0.0,-276.95,276.95,timing,C00231,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1272102.65,1272376.55,0.0,273.9,-273.9,timing,C00017,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,300758.15,300487.25,0.0,-270.9,270.9,timing,C00379,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1252382.05,1252651.75,0.0,269.7,-269.7,timing,C00094,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,299243.15,298973.6,0.0,-269.55,269.55,timing,C00156,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,296134.9,295868.15,0.0,-266.75,266.75,timing,C00195,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1224663.81,1224927.51,0.0,263.7,-263.7,timing,C00064,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,292557.1,292293.55,0.0,-263.55,263.55,timing,C00447,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,37802.05,37539.15,0.0,-262.9,262.9,timing,C01225,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,52121.5,51870.6,0.0,-250.9,250.9,timing,C00500,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,273449.15,273202.85,0.0,-246.3,246.3,timing,C00271,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1123483.55,1123725.5,0.0,241.95,-241.95,timing,C00101,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,34578.15,34337.65,0.0,-240.5,240.5,timing,C01059,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,32724.35,32960.8,0.0,236.45,-236.45,timing,C00962,customer,smb,False,installment 3/4; on pattern
+0.0,0.0,258474.75,258241.9,0.0,-232.85,232.85,timing,C00234,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,33312.85,33081.2,0.0,-231.65,231.65,timing,C00352,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,256244.9,256014.05,0.0,-230.85,230.85,timing,C00320,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1059263.65,1059491.75,0.0,228.1,-228.1,timing,C00134,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,31282.6,31508.95,0.0,226.35,-226.35,timing,C01120,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,247923.16,247699.84,0.0,-223.32,223.32,timing,C00479,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,243089.8,242870.8,0.0,-219.0,219.0,timing,C00367,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,1006209.0,1006425.65,0.0,216.65,-216.65,timing,C00114,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,29772.1,29987.0,0.0,214.9,-214.9,timing,C01013,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,237065.5,236851.9,0.0,-213.6,213.6,timing,C00297,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,235916.1,235703.55,0.0,-212.55,212.55,timing,C00478,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,227897.25,227691.95,0.0,-205.3,205.3,timing,C01172,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,908851.45,909047.15,0.0,195.7,-195.7,timing,C00140,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,216924.95,216729.55,0.0,-195.4,195.4,timing,C00504,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,215155.9,214962.05,0.0,-193.85,193.85,timing,C00469,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,211636.35,211445.7,0.0,-190.65,190.65,timing,C00169,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+917.5,917.51,6239.0,5505.0,0.01,183.51,-183.5,permanent,C01222,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,846992.95,847175.35,0.0,182.4,-182.4,timing,C00012,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,201134.05,200952.85,0.0,-181.2,181.2,timing,C00499,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,200788.2,200607.3,0.0,-180.9,180.9,timing,C00220,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,199044.45,198865.15,0.0,-179.3,179.3,timing,C00255,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,195884.35,195707.9,0.0,-176.45,176.45,timing,C00572,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,193935.25,193760.55,0.0,-174.7,174.7,timing,C01173,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,811073.9,811248.55,0.0,174.65,-174.65,timing,C00013,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,801688.55,801861.2,0.0,172.65,-172.65,timing,C00075,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,797924.55,798096.35,0.0,171.8,-171.8,timing,C00130,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,103759.7,103929.95,0.0,170.25,-170.25,timing,C00576,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+0.0,0.0,65469.13,65638.83,0.0,169.7,-169.7,timing,C00557,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,186438.45,186270.5,0.0,-167.95,167.95,timing,C00530,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,71996.95,71832.25,0.0,-164.7,164.7,timing,C00272,customer,mid_market,False,installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,181225.25,181062.0,0.0,-163.25,163.25,timing,C00295,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,181233.6,181070.35,0.0,-163.25,163.25,timing,C01026,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,22197.5,22357.75,0.0,160.25,-160.25,timing,C00210,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,735514.55,735672.95,0.0,158.4,-158.4,timing,C00152,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,174254.58,174097.62,0.0,-156.96,156.96,timing,C00554,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,173669.55,173513.1,0.0,-156.45,156.45,timing,C00302,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,172445.35,172290.0,0.0,-155.35,155.35,timing,C00443,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,92229.95,92381.45,0.0,151.5,-151.5,timing,C00165,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+0.0,0.0,703301.75,703453.15,0.0,151.4,-151.4,timing,C00088,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,676988.2,677133.95,0.0,145.75,-145.75,timing,C00068,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,161565.64,161420.12,0.0,-145.52,145.52,timing,C00256,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,160587.0,160442.3,0.0,-144.7,144.7,timing,C00494,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,160266.08,160121.72,0.0,-144.36,144.36,timing,C00274,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,152400.45,152263.2,0.0,-137.25,137.25,timing,C00579,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,58956.65,58821.8,0.0,-134.85,134.85,timing,C00593,customer,mid_market,False,installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,148536.9,148403.0,0.0,-133.9,133.9,timing,C01017,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,146391.05,146259.2,0.0,-131.85,131.85,timing,C00473,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,144820.6,144690.15,0.0,-130.45,130.45,timing,C00460,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,144574.0,144443.8,0.0,-130.2,130.2,timing,C00298,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,56315.9,56186.0,0.0,-129.9,129.9,timing,C00380,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,600899.55,601028.95,0.0,129.4,-129.4,timing,C00105,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,274222.95,274093.8,0.0,-129.15,129.15,timing,C00486,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,140588.95,140462.3,0.0,-126.65,126.65,timing,C00369,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,135519.25,135397.2,0.0,-122.05,122.05,timing,C01019,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,50768.5,50890.55,0.0,122.05,-122.05,timing,C01189,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,258398.85,258277.15,0.0,-121.7,121.7,timing,C00171,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,563191.35,563312.65,0.0,121.3,-121.3,timing,C00097,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,553731.4,553850.65,0.0,119.25,-119.25,timing,C00127,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,551696.9,551815.7,0.0,118.8,-118.8,timing,C00093,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,130295.75,130178.35,0.0,-117.4,117.4,timing,C00371,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,48401.1,48284.35,0.0,-116.75,116.75,timing,C00284,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,128322.15,128206.6,0.0,-115.55,115.55,timing,C00177,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,242098.35,241984.35,0.0,-114.0,114.0,timing,C00268,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,123617.0,123505.7,0.0,-111.3,111.3,timing,C00555,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,122980.5,122869.75,0.0,-110.75,110.75,timing,C00326,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,122338.45,122228.25,0.0,-110.2,110.2,timing,C00477,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,44825.5,44933.55,0.0,108.05,-108.05,timing,C00209,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,115905.35,115800.95,0.0,-104.4,104.4,timing,C01024,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,481876.6,481980.35,0.0,103.75,-103.75,timing,C00040,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,114678.08,114574.8,0.0,-103.28,103.28,timing,C00314,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,112577.35,112475.95,0.0,-101.4,101.4,timing,C01039,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,468515.15,468616.05,0.0,100.9,-100.9,timing,C00008,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,51430.64,51529.32,0.0,98.68,-98.68,timing,C00178,customer,mid_market,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+0.0,0.0,109391.9,109293.4,0.0,-98.5,98.5,timing,C01049,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,109257.9,109159.5,0.0,-98.4,98.4,timing,C00191,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,107112.95,107016.45,0.0,-96.5,96.5,timing,C01023,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,444422.2,444517.9,0.0,95.7,-95.7,timing,C01143,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,310073.5,309980.2,0.0,-93.3,93.3,timing,C00713,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,429941.05,430033.6,0.0,92.55,-92.55,timing,C00135,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,149380.6,149288.2,0.0,-92.4,92.4,timing,C00490,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+0.0,0.0,101991.1,101899.2,0.0,-91.9,91.9,timing,C00385,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,41747.45,41837.35,0.0,89.9,-89.9,timing,C01168,customer,smb,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,98615.3,98526.45,0.0,-88.85,88.85,timing,C00365,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,37936.15,37848.75,0.0,-87.4,87.4,timing,C00984,customer,smb,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,96686.3,96599.25,0.0,-87.05,87.05,timing,C00374,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,401512.7,401599.15,0.0,86.45,-86.45,timing,C01163,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,95950.95,95864.5,0.0,-86.45,86.45,timing,C00489,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,181910.2,181824.55,0.0,-85.65,85.65,timing,C00364,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,93294.5,93210.45,0.0,-84.05,84.05,timing,C00288,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,383258.4,383340.95,0.0,82.55,-82.55,timing,C00020,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,88162.2,88082.8,0.0,-79.4,79.4,timing,C01150,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,87235.7,87157.1,0.0,-78.6,78.6,timing,C00348,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,363108.5,363186.7,0.0,78.2,-78.2,timing,C01157,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,102202.45,102124.7,0.0,-77.75,77.75,timing,C00602,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+0.0,0.0,85539.2,85462.15,0.0,-77.05,77.05,timing,C01156,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+4559.6,4597.11,31917.2,27357.6,37.51,37.51,-0.0,permanent,C00896,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,82947.5,82872.75,0.0,-74.75,74.75,timing,C00391,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,346426.8,346501.4,0.0,74.6,-74.6,timing,C00039,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,156768.4,156694.6,0.0,-73.8,73.8,timing,C00595,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,81921.4,81847.6,0.0,-73.8,73.8,timing,C00239,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,80621.9,80549.3,0.0,-72.6,72.6,timing,C00248,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,27331.24,27401.64,0.0,70.4,-70.4,timing,C01233,customer,mid_market,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; on pattern
+0.0,0.0,323172.5,323242.1,0.0,69.6,-69.6,timing,C00080,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,76586.15,76517.2,0.0,-68.95,68.95,timing,C00433,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,76483.2,76414.3,0.0,-68.9,68.9,timing,C01146,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,316143.4,316211.45,0.0,68.05,-68.05,timing,C00146,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,142458.35,142391.25,0.0,-67.1,67.1,timing,C00458,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,72735.0,72669.45,0.0,-65.55,65.55,timing,C00226,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,304317.39,304382.92,0.0,65.53,-65.53,timing,C00044,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,71809.5,71744.8,0.0,-64.7,64.7,timing,C00527,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,135280.2,135216.5,0.0,-63.7,63.7,timing,C00422,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,134034.4,133971.25,0.0,-63.15,63.15,timing,C00285,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,68822.6,68760.6,0.0,-62.0,62.0,timing,C01137,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,67849.92,67788.8,0.0,-61.12,61.12,timing,C01053,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,128575.2,128514.65,0.0,-60.55,60.55,timing,C00329,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,200956.7,200896.2,0.0,-60.5,60.5,timing,C00906,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,198230.0,198170.35,0.0,-59.65,59.65,timing,C00902,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,196709.4,196650.2,0.0,-59.2,59.2,timing,C00699,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,64549.4,64491.25,0.0,-58.15,58.15,timing,C01055,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,112288.45,112235.55,0.0,-52.9,52.9,timing,C00201,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,21646.65,21699.05,0.0,52.4,-52.4,timing,C00740,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; on pattern
+0.0,0.0,173238.9,173186.75,0.0,-52.15,52.15,timing,C00807,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,239321.2,239372.7,0.0,51.5,-51.5,timing,C01018,customer,enterprise,False,"renewal 1/4, p_renew=0.93; renewal 2/4, p_renew=0.93"
+0.0,0.0,65927.95,65877.7,0.0,-50.25,50.25,timing,C00428,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+0.0,0.0,55622.0,55571.9,0.0,-50.1,50.1,timing,C00280,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,165567.95,165518.15,0.0,-49.8,49.8,timing,C00648,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,53889.6,53841.1,0.0,-48.5,48.5,timing,C00200,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,159940.1,159892.0,0.0,-48.1,48.1,timing,C00952,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,53276.0,53228.0,0.0,-48.0,48.0,timing,C00233,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,99833.1,99786.1,0.0,-47.0,47.0,timing,C00218,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,51574.3,51527.8,0.0,-46.5,46.5,timing,C01138,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,97976.7,97930.6,0.0,-46.1,46.1,timing,C00344,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,39080.1,39125.6,0.0,45.5,-45.5,timing,C00556,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,95977.0,95931.8,0.0,-45.2,45.2,timing,C00382,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,208424.76,208469.64,0.0,44.88,-44.88,timing,C00151,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,207400.83,207445.49,0.0,44.66,-44.66,timing,C00136,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,391960.5,392004.15,0.0,43.65,-43.65,timing,C00021,customer,enterprise,False,"installment 4/4; renewal 1/4, p_renew=0.93"
+0.0,0.0,26834.25,26792.25,0.0,-42.0,42.0,timing,C01170,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,44972.55,44932.05,0.0,-40.5,40.5,timing,C00270,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,359030.4,359070.4,0.0,40.0,-40.0,timing,C00055,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+0.0,0.0,399735.22,399774.98,0.0,39.76,-39.76,timing,C01041,customer,enterprise,False,"installment 4/4; renewal 1/4, p_renew=0.93"
+0.0,0.0,43565.6,43526.4,0.0,-39.2,39.2,timing,C00581,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,327569.1,327605.6,0.0,36.5,-36.5,timing,C00107,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+0.0,0.0,121410.73,121374.55,0.0,-36.18,36.18,timing,C00286,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+0.0,0.0,120090.3,120054.2,0.0,-36.1,36.1,timing,C00670,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,323646.75,323682.8,0.0,36.05,-36.05,timing,C01032,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+0.0,0.0,75558.2,75522.6,0.0,-35.6,35.6,timing,C00424,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,117195.4,117160.1,0.0,-35.3,35.3,timing,C00979,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,37191.6,37158.1,0.0,-33.5,33.5,timing,C00597,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,151706.54,151739.2,0.0,32.66,-32.66,timing,C00102,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,35552.0,35519.9,0.0,-32.1,32.1,timing,C00215,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,35601.15,35569.1,0.0,-32.05,32.05,timing,C01022,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,33308.2,33278.2,0.0,-30.0,30.0,timing,C00571,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,48119.2,48089.4,0.0,-29.8,29.8,timing,C00598,customer,mid_market,False,"installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90"
+0.0,0.0,95170.5,95141.9,0.0,-28.6,28.6,timing,C00696,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,94400.05,94371.65,0.0,-28.4,28.4,timing,C00779,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,59529.2,59501.15,0.0,-28.05,28.05,timing,C00398,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,58917.5,58889.75,0.0,-27.75,27.75,timing,C00591,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,91431.4,91403.85,0.0,-27.55,27.55,timing,C00632,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,91120.85,91093.45,0.0,-27.4,27.4,timing,C00921,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,107775.05,107747.8,0.0,-27.25,27.25,timing,C00793,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,90486.4,90459.15,0.0,-27.25,27.25,timing,C00658,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,242773.2,242800.25,0.0,27.05,-27.05,timing,C00059,customer,enterprise,False,"installment 4/4; renewal 1/4, p_renew=0.93"
+0.0,0.0,89985.7,89958.65,0.0,-27.05,27.05,timing,C00667,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,89083.4,89056.55,0.0,-26.85,26.85,timing,C00968,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,29024.55,28998.4,0.0,-26.15,26.15,timing,C00293,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,86759.1,86733.0,0.0,-26.1,26.1,timing,C00981,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+0.0,0.0,54341.8,54316.2,0.0,-25.6,25.6,timing,C01037,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,84179.05,84153.7,0.0,-25.35,25.35,timing,C00788,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,27552.5,27527.7,0.0,-24.8,24.8,timing,C01158,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,82200.75,82176.05,0.0,-24.7,24.7,timing,C00770,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,82102.25,82077.55,0.0,-24.7,24.7,timing,C00617,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,27192.7,27168.2,0.0,-24.5,24.5,timing,C01155,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,150305.5,150281.15,0.0,-24.35,24.35,timing,C00485,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+0.0,0.0,26410.8,26387.0,0.0,-23.8,23.8,timing,C00426,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,50000.0,49976.45,0.0,-23.55,23.55,timing,C00448,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,48922.95,48899.9,0.0,-23.05,23.05,timing,C00438,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,52925.17,52902.89,0.0,-22.28,22.28,timing,C00332,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,73899.0,73876.75,0.0,-22.25,22.25,timing,C00744,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,73499.45,73477.35,0.0,-22.1,22.1,timing,C00695,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,136322.25,136300.2,0.0,-22.05,22.05,timing,C01048,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+0.0,0.0,102399.77,102421.82,0.0,22.05,-22.05,timing,C00111,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,32524.46,32502.96,0.0,-21.5,21.5,timing,C00541,customer,mid_market,False,"disputed; renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,66720.3,66699.1,0.0,-21.2,21.2,timing,C00415,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+0.0,0.0,23581.4,23560.2,0.0,-21.2,21.2,timing,C00381,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,69071.1,69050.4,0.0,-20.7,20.7,timing,C00764,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+0.0,0.0,68634.9,68614.25,0.0,-20.65,20.65,timing,C01178,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,67787.35,67766.95,0.0,-20.4,20.4,timing,C00797,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,67491.25,67470.95,0.0,-20.3,20.3,timing,C00605,customer,smb,False,"renewal 1/1, p_renew=0.81"
+2752.5,2742.38,19267.5,16515.0,-10.12,-10.12,-0.0,permanent,C01105,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,181178.95,181199.15,0.0,20.2,-20.2,timing,C01153,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+0.0,0.0,79500.2,79480.2,0.0,-20.0,20.0,timing,C00985,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,88922.45,88941.6,0.0,19.15,-19.15,timing,C01045,customer,enterprise,False,"renewal 1/1, p_renew=0.93"
+0.0,0.0,63434.25,63415.15,0.0,-19.1,19.1,timing,C00988,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,40566.15,40547.1,0.0,-19.05,19.05,timing,C00361,customer,mid_market,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90"
+0.0,0.0,20949.5,20930.6,0.0,-18.9,18.9,timing,C01141,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,61430.7,61412.25,0.0,-18.45,18.45,timing,C00737,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,89483.8,89465.4,0.0,-18.4,18.4,timing,C00961,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,20050.58,20032.51,0.0,-18.07,18.07,timing,C00338,customer,mid_market,False,"renewal 1/1, p_renew=0.90"
+0.0,0.0,59477.8,59459.9,0.0,-17.9,17.9,timing,C00639,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,179155.67,179173.51,0.0,17.84,-17.84,timing,C00131,customer,enterprise,False,"installment 4/4; renewal 1/4, p_renew=0.93"
+0.0,0.0,54925.6,54908.1,0.0,-17.5,17.5,timing,C00546,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90"
+0.0,0.0,41491.86,41474.41,0.0,-17.45,17.45,timing,C01038,customer,mid_market,False,"behavior break: 50% weighted; installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,6758.1,6774.4,0.0,16.3,-16.3,timing,C01112,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+0.0,0.0,17501.84,17486.0,0.0,-15.84,15.84,timing,C01151,customer,mid_market,False,"renewal 1/4, p_renew=0.90; renewal 2/4, p_renew=0.90"
+0.0,0.0,51413.05,51397.55,0.0,-15.5,15.5,timing,C00827,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,238122.6,238138.0,0.0,15.4,-15.4,timing,C00052,customer,enterprise,False,"installment 4/4; renewal 1/4, p_renew=0.93"
+0.0,0.0,50921.8,50906.45,0.0,-15.35,15.35,timing,C00633,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,19864.25,19849.0,0.0,-15.25,15.25,timing,C01148,customer,mid_market,False,"on pattern; renewal 1/12, p_renew=0.90; renewal 2/12, p_renew=0.90; renewal 3/12, p_renew=0.90; renewal 4/12, p_renew=0.90; renewal 5/12, p_renew=0.90"
+0.0,0.0,31608.35,31593.45,0.0,-14.9,14.9,timing,C00452,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,31047.45,31032.8,0.0,-14.65,14.65,timing,C00222,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+7250.05,7250.04,54452.95,47188.8,-0.01,-14.11,14.1,permanent,C00836,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; r"
+0.0,0.0,46720.45,46706.4,0.0,-14.05,14.05,timing,C00750,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,46234.8,46220.9,0.0,-13.9,13.9,timing,C00730,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,44967.2,44953.65,0.0,-13.55,13.55,timing,C00869,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,28495.0,28481.6,0.0,-13.4,13.4,timing,C00322,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,44140.8,44127.5,0.0,-13.3,13.3,timing,C00707,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,44094.9,44081.6,0.0,-13.3,13.3,timing,C00854,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,28175.75,28162.5,0.0,-13.25,13.25,timing,C01161,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,64156.5,64143.3,0.0,-13.2,13.2,timing,C00615,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,29517.76,29505.36,0.0,-12.4,12.4,timing,C00164,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,34616.33,34603.94,0.0,-12.39,12.39,timing,C01175,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,48286.75,48274.5,0.0,-12.25,12.25,timing,C00799,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+6106.75,6106.73,45866.05,39747.3,-0.02,-12.02,12.0,permanent,C00781,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; r"
+0.0,0.0,39733.85,39721.85,0.0,-12.0,12.0,timing,C01021,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,25314.95,25303.0,0.0,-11.95,11.95,timing,C00383,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,39437.8,39425.9,0.0,-11.9,11.9,timing,C01152,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,37848.05,37836.65,0.0,-11.4,11.4,timing,C00609,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,24166.65,24155.25,0.0,-11.4,11.4,timing,C00411,customer,mid_market,False,"on pattern; renewal 1/4, p_renew=0.90"
+0.0,0.0,44518.25,44507.0,0.0,-11.25,11.25,timing,C00839,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,37295.6,37284.4,0.0,-11.2,11.2,timing,C00900,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,36304.55,36293.6,0.0,-10.95,10.95,timing,C01042,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,22898.75,22887.95,0.0,-10.8,10.8,timing,C00259,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+16201.6,16201.59,51362.9,35150.7,-0.01,-10.61,10.6,permanent,C01033,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,67657.5,67647.0,0.0,-10.5,10.5,timing,C00867,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,58087.75,58077.3,0.0,-10.45,10.45,timing,C00879,customer,smb,False,"disputed; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,39530.85,39520.85,0.0,-10.0,10.0,timing,C00977,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,38755.53,38745.69,0.0,-9.84,9.84,timing,C00831,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,36371.35,36362.1,0.0,-9.25,9.25,timing,C00711,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,43903.1,43893.9,0.0,-9.2,9.2,timing,C00987,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,21825.89,21816.73,0.0,-9.16,9.16,timing,C01052,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,25253.11,25244.08,0.0,-9.03,9.03,timing,C01051,customer,mid_market,False,"installment 4/4; renewal 1/4, p_renew=0.90"
+0.0,0.0,29323.8,29315.1,0.0,-8.7,8.7,timing,C00731,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+0.0,0.0,81222.6,81214.0,0.0,-8.6,8.6,timing,C00683,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,41803.7,41795.1,0.0,-8.6,8.6,timing,C00772,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,28326.35,28317.85,0.0,-8.5,8.5,timing,C01144,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,27523.75,27515.45,0.0,-8.3,8.3,timing,C01047,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,27540.1,27531.85,0.0,-8.25,8.25,timing,C01046,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,73700.3,73708.5,0.0,8.2,-8.2,timing,C01167,customer,enterprise,False,"on pattern; renewal 1/4, p_renew=0.93"
+0.0,0.0,27149.1,27140.95,0.0,-8.15,8.15,timing,C00653,customer,smb,False,"renewal 1/1, p_renew=0.81"
+6219.65,6219.66,45655.15,39427.5,0.01,-7.99,8.0,timing,C00997,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_ren"
+0.0,0.0,26298.4,26290.45,0.0,-7.95,7.95,timing,C01174,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,25674.3,25666.6,0.0,-7.7,7.7,timing,C00660,customer,smb,False,"renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,25310.4,25302.9,0.0,-7.5,7.5,timing,C01140,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+0.0,0.0,47319.3,47311.8,0.0,-7.5,7.5,timing,C00684,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,36348.0,36340.6,0.0,-7.4,7.4,timing,C00847,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,29023.35,29016.1,0.0,-7.25,7.25,timing,C00913,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,23956.5,23949.3,0.0,-7.2,7.2,timing,C00857,customer,smb,False,"renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,23649.9,23642.8,0.0,-7.1,7.1,timing,C00758,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,27342.5,27335.5,0.0,-7.0,7.0,timing,C00942,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,27105.05,27098.3,0.0,-6.75,6.75,timing,C00910,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,21314.9,21308.5,0.0,-6.4,6.4,timing,C00973,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,21234.95,21228.6,0.0,-6.35,6.35,timing,C00899,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,20371.55,20365.4,0.0,-6.15,6.15,timing,C01035,customer,smb,False,"renewal 1/1, p_renew=0.81"
+9260.4,9260.39,29357.6,20091.2,-0.01,-6.01,6.0,permanent,C01162,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,19591.9,19586.0,0.0,-5.9,5.9,timing,C01029,customer,smb,False,"renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,55713.2,55707.4,0.0,-5.8,5.8,timing,C00812,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,22278.4,22272.9,0.0,-5.5,5.5,timing,C01160,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,17839.9,17834.5,0.0,-5.4,5.4,timing,C00745,customer,smb,False,"renewal 1/4, p_renew=0.81; renewal 2/4, p_renew=0.81"
+0.0,0.0,31374.75,31369.8,0.0,-4.95,4.95,timing,C00700,customer,smb,False,"installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,22965.8,22961.0,0.0,-4.8,4.8,timing,C00872,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,43768.3,43763.6,0.0,-4.7,4.7,timing,C00756,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,44350.1,44345.4,0.0,-4.7,4.7,timing,C00675,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,15053.1,15048.6,0.0,-4.5,4.5,timing,C00608,customer,smb,False,"renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81; renewal 6/12, p_rene"
+0.0,0.0,27734.1,27729.75,0.0,-4.35,4.35,timing,C01036,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,25246.6,25242.65,0.0,-3.95,3.95,timing,C00640,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81"
+0.0,0.0,12018.75,12015.15,0.0,-3.6,3.6,timing,C01169,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,14428.2,14424.7,0.0,-3.5,3.5,timing,C01159,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,11630.85,11627.35,0.0,-3.5,3.5,timing,C01028,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,11599.9,11596.4,0.0,-3.5,3.5,timing,C01027,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,13374.68,13371.32,0.0,-3.36,3.36,timing,C00958,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,12996.65,12993.4,0.0,-3.25,3.25,timing,C01149,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,11980.5,11977.5,0.0,-3.0,3.0,timing,C00912,customer,smb,False,"installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,17569.7,17566.95,0.0,-2.75,2.75,timing,C00685,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81"
+0.0,0.0,24816.4,24813.7,0.0,-2.7,2.7,timing,C00950,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,22903.9,22901.5,0.0,-2.4,2.4,timing,C00918,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,17304.71,17302.39,0.0,-2.32,2.32,timing,C00346,customer,mid_market,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; on pattern; renewal 1/12, p_renew=0.90"
+6811.45,6811.45,48259.95,41446.25,0.0,-2.25,2.25,timing,C00604,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+0.0,0.0,20919.9,20917.7,0.0,-2.2,2.2,timing,C00888,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,20254.7,20252.6,0.0,-2.1,2.1,timing,C00990,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+0.0,0.0,37742.35,37740.3,0.0,-2.05,2.05,timing,C00849,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+0.0,0.0,10900.05,10898.25,0.0,-1.8,1.8,timing,C00811,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,10745.35,10743.65,0.0,-1.7,1.7,timing,C01183,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81"
+0.0,0.0,7610.9,7609.3,0.0,-1.6,1.6,timing,C01164,customer,smb,False,"installment 11/12; installment 12/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81"
+0.0,0.0,5028.86,5027.34,0.0,-1.52,1.52,timing,C01181,customer,smb,False,"renewal 1/1, p_renew=0.81"
+0.0,0.0,8925.45,8924.05,0.0,-1.4,1.4,timing,C01176,customer,smb,False,"installment 4/4; renewal 1/4, p_renew=0.81"
+0.0,0.0,24481.05,24479.7,0.0,-1.35,1.35,timing,C01063,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+0.0,0.0,5412.9,5411.65,0.0,-1.25,1.25,timing,C01025,customer,smb,False,"on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81; renewal 4/12, p_renew=0.81; renewal 5/12, p_renew=0.81"
+0.0,0.0,10347.2,10346.1,0.0,-1.1,1.1,timing,C00763,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 9/12; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81"
+1067.5,1067.49,7745.05,6676.5,-0.01,-1.06,1.05,permanent,C01166,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; on pattern; renewal 1/12, p_renew=0.81; renewal 2/12, p_renew=0.81; renewal 3/12, p_renew=0.81"
+0.0,0.0,17314.6,17313.7,0.0,-0.9,0.9,timing,C00796,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+0.0,0.0,15828.9,15828.05,0.0,-0.85,0.85,timing,C01058,customer,smb,False,"installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; renewal 1/12, p_renew=0.81"
+3273.25,3273.23,22912.75,19639.5,-0.02,-0.02,0.0,permanent,C01087,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+54192.65,54192.63,162577.95,108385.3,-0.02,-0.02,0.0,permanent,C00521,customer,mid_market,False,installment 2/4; installment 3/4; on pattern
+2123.25,2123.23,14862.75,12739.5,-0.02,-0.02,0.0,permanent,C01004,customer,smb,False,installment 1/12; installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+6805.85,6805.84,47640.95,40835.1,-0.01,-0.01,0.0,permanent,C00993,customer,smb,False,installment 10/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+5576.95,5576.94,39038.65,33461.7,-0.01,-0.01,-0.0,permanent,C00649,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+7687.5,7687.51,53812.5,46125.0,0.01,0.01,-0.0,permanent,C00795,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,26878.2,26878.2,0.0,0.0,0.0,timing,C00832,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+0.0,0.0,763622.7,763622.7,0.0,0.0,0.0,timing,C00100,customer,enterprise,False,installment 3/4; on pattern
+0.0,0.0,50341.14,50341.14,0.0,0.0,0.0,timing,C00208,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,44045.2,44045.2,0.0,0.0,0.0,timing,C01129,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,9102.9,9102.9,0.0,0.0,0.0,timing,C00810,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,792171.5,792171.5,0.0,0.0,0.0,timing,C00047,customer,enterprise,False,on pattern
+0.0,0.0,810624.8,810624.8,0.0,0.0,0.0,timing,C00049,customer,enterprise,False,on pattern
+0.0,0.0,386646.2,386646.2,0.0,0.0,0.0,timing,C00072,customer,enterprise,False,installment 3/4; on pattern
+0.0,0.0,337498.0,337498.0,0.0,0.0,0.0,timing,C00060,customer,enterprise,False,installment 4/4; on pattern
+0.0,0.0,1310846.0,1310846.0,0.0,0.0,0.0,timing,C01187,customer,enterprise,False,installment 4/4; on pattern
+0.0,0.0,79465.2,79465.2,0.0,0.0,0.0,timing,C01192,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,216033.0,216033.0,0.0,0.0,0.0,timing,C01199,customer,enterprise,False,installment 3/4; on pattern
+0.0,0.0,260301.1,260301.1,0.0,0.0,0.0,timing,C00076,customer,enterprise,False,installment 2/4; on pattern
+0.0,0.0,23923.58,23923.58,0.0,0.0,0.0,timing,C01203,customer,smb,False,behavior break: 50% weighted; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,12110.52,12110.52,0.0,0.0,0.0,timing,C01204,customer,smb,False,behavior break: 50% weighted; installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,53108.7,53108.7,0.0,0.0,0.0,timing,C01206,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,42912.6,42912.6,0.0,0.0,0.0,timing,C01209,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,593222.6,593222.6,0.0,0.0,0.0,timing,C00011,customer,enterprise,False,installment 4/4; on pattern
+0.0,0.0,1815297.15,1815297.15,0.0,0.0,0.0,timing,C00006,customer,enterprise,False,on pattern
+0.0,0.0,7336805.55,7336805.55,0.0,0.0,0.0,timing,C00004,customer,enterprise,True,installment 1/1
+0.0,0.0,5084.7,5084.7,0.0,0.0,0.0,timing,C01201,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,-1500000.0,-1500000.0,0.0,0.0,0.0,timing,income_taxes,category,,False,tax calendar
+0.0,0.0,36361.3,36361.3,0.0,0.0,0.0,timing,C00800,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,11512.2,11512.2,0.0,0.0,0.0,timing,C01210,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,76252.5,76252.5,0.0,0.0,0.0,timing,C00746,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,19133.4,19133.4,0.0,0.0,0.0,timing,C00776,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,33243.3,33243.3,0.0,0.0,0.0,timing,C00778,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,36451.9,36451.9,0.0,0.0,0.0,timing,C00835,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,57448.9,57448.9,0.0,0.0,0.0,timing,C00841,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,68524.2,68524.2,0.0,0.0,0.0,timing,C00843,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,22065.0,22065.0,0.0,0.0,0.0,timing,C00848,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,29165.1,29165.1,0.0,0.0,0.0,timing,C00851,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,16770.0,16770.0,0.0,0.0,0.0,timing,C00819,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,43657.8,43657.8,0.0,0.0,0.0,timing,C00822,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,48231.9,48231.9,0.0,0.0,0.0,timing,C00825,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,26598.6,26598.6,0.0,0.0,0.0,timing,C00826,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,-3499999.98,-3499999.98,0.0,0.0,0.0,timing,rent_facilities,category,,False,"run rate x 1.00 seasonality, 0d terms"
+0.0,0.0,49432.8,49432.8,0.0,0.0,0.0,timing,C00828,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,45592.3,45592.3,0.0,0.0,0.0,timing,C00829,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,154350.84,154350.84,0.0,0.0,0.0,timing,C00331,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,48735.9,48735.9,0.0,0.0,0.0,timing,C01221,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,266486.5,266486.5,0.0,0.0,0.0,timing,C00263,customer,mid_market,False,on pattern
+0.0,0.0,81619.4,81619.4,0.0,0.0,0.0,timing,C00281,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,47091.3,47091.3,0.0,0.0,0.0,timing,C00676,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,59311.5,59311.5,0.0,0.0,0.0,timing,C00334,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,238346.6,238346.6,0.0,0.0,0.0,timing,C00582,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,93221.08,93221.08,0.0,0.0,0.0,timing,C00583,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,30205.5,30205.5,0.0,0.0,0.0,timing,C00635,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,34776.9,34776.9,0.0,0.0,0.0,timing,C00634,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,33324.3,33324.3,0.0,0.0,0.0,timing,C00636,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,47720.3,47720.3,0.0,0.0,0.0,timing,C00637,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,16770.9,16770.9,0.0,0.0,0.0,timing,C00642,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,27701.4,27701.4,0.0,0.0,0.0,timing,C00940,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,28706.8,28706.8,0.0,0.0,0.0,timing,C00955,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,31800.8,31800.8,0.0,0.0,0.0,timing,C00960,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,48683.4,48683.4,0.0,0.0,0.0,timing,C00966,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,51525.3,51525.3,0.0,0.0,0.0,timing,C00631,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,22934.4,22934.4,0.0,0.0,0.0,timing,C00917,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,18691.2,18691.2,0.0,0.0,0.0,timing,C00919,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,25200.42,25200.42,0.0,0.0,0.0,timing,C00920,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,14441.4,14441.4,0.0,0.0,0.0,timing,C00924,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,30968.4,30968.4,0.0,0.0,0.0,timing,C00925,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+4883.45,4883.45,34184.15,29300.7,-0.0,0.0,-0.0,timing,C00926,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,40774.8,40774.8,0.0,0.0,0.0,timing,C00928,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,-1572327.16,-1572327.16,0.0,0.0,0.0,timing,capex,category,,False,planned + 20d avg slippage
+0.0,0.0,421008.9,421008.9,0.0,0.0,0.0,timing,C00025,customer,enterprise,False,installment 2/4; on pattern
+0.0,0.0,400800.0,400800.0,0.0,0.0,0.0,timing,C00036,customer,enterprise,False,installment 4/4; on pattern
+0.0,0.0,1006376.26,1006376.26,0.0,0.0,0.0,timing,C00042,customer,enterprise,False,behavior break: 50% weighted; installment 2/4; on pattern
+0.0,0.0,20562.3,20562.3,0.0,0.0,0.0,timing,C00856,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+0.0,0.0,100713.47,100713.47,0.0,0.0,0.0,timing,C00551,customer,mid_market,False,installment 1/4; installment 2/4; installment 3/4
+0.0,0.0,226118.05,226118.05,0.0,0.0,0.0,timing,C00545,customer,mid_market,False,on pattern
+0.0,0.0,90530.4,90530.4,0.0,0.0,0.0,timing,C00540,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,53444.6,53444.6,0.0,0.0,0.0,timing,C00536,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,96129.8,96129.8,0.0,0.0,0.0,timing,C00529,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,79241.1,79241.1,0.0,0.0,0.0,timing,C00999,customer,smb,False,disputed; installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,15375.3,15375.3,0.0,0.0,0.0,timing,C00994,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,70247.38,70247.38,0.0,0.0,-0.0,timing,C00480,customer,mid_market,False,disputed; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+0.0,0.0,449330.85,449330.85,0.0,0.0,0.0,timing,C01009,customer,enterprise,False,on pattern
+0.0,0.0,33393.0,33393.0,0.0,0.0,0.0,timing,C01011,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,37962.0,37962.0,0.0,0.0,0.0,timing,C00980,customer,smb,False,on pattern
+0.0,0.0,130586.6,130586.6,0.0,0.0,0.0,timing,C00526,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,11065.1,11065.1,0.0,0.0,0.0,timing,C00982,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,16021.8,16021.8,0.0,0.0,0.0,timing,C00983,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,186304.9,186304.9,0.0,0.0,0.0,timing,C01003,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,68529.4,68529.4,0.0,0.0,0.0,timing,C00552,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,13841.6,13841.6,0.0,0.0,0.0,timing,C00589,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,31603.5,31603.5,0.0,0.0,0.0,timing,C00600,customer,mid_market,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; on pattern
+0.0,0.0,34124.4,34124.4,0.0,0.0,0.0,timing,C00611,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,59762.1,59762.1,0.0,0.0,0.0,timing,C00442,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,33011.2,33011.2,0.0,0.0,0.0,timing,C00444,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,75955.8,75955.8,0.0,0.0,0.0,timing,C00446,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,74526.05,74526.05,0.0,0.0,0.0,timing,C00454,customer,mid_market,False,on pattern
+0.0,0.0,73097.5,73097.5,0.0,0.0,0.0,timing,C00466,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,11618.4,11618.4,0.0,0.0,0.0,timing,C00914,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,18522.0,18522.0,0.0,0.0,0.0,timing,C00915,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,19800.3,19800.3,0.0,0.0,0.0,timing,C00692,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,50540.1,50540.1,0.0,0.0,0.0,timing,C00698,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,29232.29,29232.29,0.0,0.0,0.0,timing,C00708,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,23367.6,23367.6,0.0,0.0,0.0,timing,C00712,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,48866.7,48866.7,0.0,0.0,0.0,timing,C00986,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+0.0,0.0,288800.2,288800.2,0.0,0.0,0.0,timing,C00561,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,56784.8,56784.8,0.0,0.0,0.0,timing,C00901,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,26796.9,26796.9,0.0,0.0,0.0,timing,C00681,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,54378.15,54378.15,0.0,0.0,0.0,timing,C00859,customer,smb,False,on pattern
+0.0,0.0,69991.5,69991.5,0.0,0.0,0.0,timing,C00682,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,46622.7,46622.7,0.0,0.0,0.0,timing,C00881,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,21764.4,21764.4,0.0,0.0,0.0,timing,C00663,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,10360.1,10360.1,0.0,0.0,0.0,timing,C00671,customer,smb,False,installment 2/4; installment 3/4
+0.0,0.0,33214.5,33214.5,0.0,0.0,0.0,timing,C00880,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,24483.6,24483.6,0.0,0.0,0.0,timing,C00673,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,21781.2,21781.2,0.0,0.0,0.0,timing,C00467,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,105263.8,105263.8,0.0,0.0,0.0,timing,C01043,customer,enterprise,False,installment 4/4; on pattern
+0.0,0.0,249725.51,249725.51,0.0,0.0,0.0,timing,C00471,customer,mid_market,False,behavior break: 50% weighted; installment 3/4; installment 4/4
+0.0,0.0,58261.3,58261.3,0.0,0.0,0.0,timing,C00430,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,81923.1,81923.1,0.0,0.0,0.0,timing,C00522,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,75404.4,75404.4,0.0,0.0,0.0,timing,C00523,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,148132.17,148132.17,0.0,0.0,0.0,timing,C00497,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,55867.5,55867.5,0.0,0.0,0.0,timing,C00501,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,177101.8,177101.8,0.0,0.0,0.0,timing,C00502,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,60253.2,60253.2,0.0,0.0,0.0,timing,C00507,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,28174.8,28174.8,0.0,0.0,0.0,timing,C00510,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,176261.36,176261.36,0.0,0.0,0.0,timing,C00515,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,101672.04,101672.04,0.0,0.0,0.0,timing,C00516,customer,mid_market,False,disputed; installment 3/4; installment 4/4
+0.0,0.0,63145.2,63145.2,0.0,0.0,0.0,timing,C00517,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,45600.0,45600.0,0.0,0.0,0.0,timing,C00418,customer,mid_market,False,disputed; installment 10/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,39243.38,39243.38,0.0,0.0,0.0,timing,C00423,customer,mid_market,False,installment 10/12; installment 11/12; installment 12/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,38829.8,38829.8,0.0,0.0,0.0,timing,C00427,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,141461.2,141461.2,0.0,0.0,0.0,timing,C00349,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,-1500000.0,-1500000.0,0.0,0.0,0.0,timing,debt_principal,category,,False,contractual
+0.0,0.0,-925000.0,-925000.0,0.0,0.0,0.0,timing,debt_interest,category,,False,contractual
+0.0,0.0,26174.3,26174.3,0.0,0.0,0.0,timing,C01224,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,10976.9,10976.9,0.0,0.0,0.0,timing,C00897,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,26423.7,26423.7,0.0,0.0,0.0,timing,C00585,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,1263478.85,1263478.85,0.0,0.0,0.0,timing,C00113,customer,enterprise,False,on pattern
+0.0,0.0,171466.56,171466.56,0.0,0.0,0.0,timing,C00104,customer,enterprise,False,installment 2/4; installment 3/4
+0.0,0.0,54006.8,54006.8,0.0,0.0,0.0,timing,C00228,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,240362.6,240362.6,0.0,0.0,0.0,timing,C00121,customer,enterprise,False,installment 3/4; on pattern
+0.0,0.0,195785.6,195785.6,0.0,0.0,0.0,timing,C00141,customer,enterprise,False,on pattern
+0.0,0.0,399946.2,399946.2,0.0,0.0,0.0,timing,C00154,customer,enterprise,False,installment 3/4; installment 4/4
+0.0,0.0,31337.6,31337.6,0.0,0.0,0.0,timing,C00162,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,203584.2,203584.2,0.0,0.0,0.0,timing,C00122,customer,enterprise,False,installment 2/4; on pattern
+0.0,0.0,48964.8,48964.8,0.0,0.0,0.0,timing,C01216,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,113100.6,113100.6,0.0,0.0,0.0,timing,C00719,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,34455.0,34455.0,0.0,0.0,0.0,timing,C00722,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,47612.2,47612.2,0.0,0.0,0.0,timing,C00741,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,125523.0,125523.0,0.0,0.0,0.0,timing,C00357,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,122983.5,122983.5,0.0,0.0,0.0,timing,C00360,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,50414.28,50414.28,0.0,0.0,0.0,timing,C00363,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+0.0,0.0,19995.0,19995.0,0.0,0.0,0.0,timing,C00237,customer,mid_market,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; on pattern
+0.0,0.0,53976.5,53976.5,0.0,0.0,0.0,timing,C00395,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,16404.7,16404.7,0.0,0.0,0.0,timing,C00399,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,145112.0,145112.0,0.0,0.0,0.0,timing,C00405,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,227493.6,227493.6,0.0,0.0,0.0,timing,C00402,customer,mid_market,False,installment 1/4; installment 2/4
+0.0,0.0,16107.2,16107.2,0.0,0.0,0.0,timing,C00410,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,59819.6,59819.6,0.0,0.0,0.0,timing,C00414,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,13080.3,13080.3,0.0,0.0,0.0,timing,C01074,customer,smb,False,installment 10/12; installment 11/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,45611.16,45611.16,0.0,0.0,0.0,timing,C00408,customer,mid_market,False,installment 1/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+0.0,0.0,11445.2,11445.2,0.0,0.0,0.0,timing,C01082,customer,smb,False,installment 3/4; installment 4/4
+0.0,0.0,287120.2,287120.2,0.0,0.0,0.0,timing,C01088,customer,enterprise,False,on pattern
+0.0,0.0,19694.1,19694.1,0.0,0.0,0.0,timing,C01097,customer,smb,False,installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,16803.3,16803.3,0.0,0.0,0.0,timing,C01102,customer,smb,False,installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12
+0.0,0.0,97267.95,97267.95,0.0,0.0,0.0,timing,C00389,customer,mid_market,False,on pattern
+0.0,0.0,393929.8,393929.8,0.0,0.0,0.0,timing,C01062,customer,enterprise,False,installment 3/4; installment 4/4
+0.0,0.0,19791.3,19791.3,0.0,0.0,0.0,timing,C01066,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,556426.25,556426.25,0.0,0.0,0.0,timing,C00095,customer,enterprise,False,on pattern
+0.0,0.0,26139.3,26139.3,0.0,0.0,0.0,timing,C01067,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,56593.3,56593.3,0.0,0.0,0.0,timing,C01070,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,8174.4,8174.4,0.0,0.0,0.0,timing,C00786,customer,smb,False,installment 10/12; installment 11/12; installment 12/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,28819.6,28819.6,0.0,0.0,0.0,timing,C01072,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,40219.5,40219.5,0.0,0.0,0.0,timing,C00790,customer,smb,False,installment 10/12; installment 5/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12
+0.0,0.0,50346.2,50346.2,0.0,0.0,0.0,timing,C00294,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,67982.5,67982.5,0.0,0.0,0.0,timing,C00207,customer,mid_market,False,installment 3/4; on pattern
+0.0,0.0,11996.73,11996.73,0.0,0.0,0.0,timing,C01219,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,55476.2,55476.2,0.0,0.0,0.0,timing,C00310,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,82596.64,82596.64,0.0,0.0,0.0,timing,C00311,customer,mid_market,False,installment 10/12; installment 11/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,101297.6,101297.6,0.0,0.0,0.0,timing,C00313,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,95131.9,95131.9,0.0,0.0,0.0,timing,C00316,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,41494.77,41494.77,0.0,0.0,0.0,timing,C00321,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,61330.24,61330.24,0.0,0.0,0.0,timing,C00323,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,547263.58,547263.58,0.0,0.0,0.0,timing,C00327,customer,mid_market,False,behavior break: 50% weighted; installment 3/4; installment 4/4
+0.0,0.0,111384.2,111384.2,0.0,0.0,0.0,timing,C00330,customer,mid_market,False,installment 2/4; installment 3/4
+0.0,0.0,867825.4,867825.4,0.0,0.0,0.0,timing,C01132,customer,enterprise,False,installment 1/1
+0.0,0.0,80703.3,80703.3,0.0,0.0,0.0,timing,C01133,customer,mid_market,False,installment 1/1
+0.0,0.0,28024.5,28024.5,0.0,0.0,0.0,timing,C01136,customer,mid_market,False,installment 1/1
+0.0,0.0,19084.2,19084.2,0.0,0.0,0.0,timing,C00804,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+0.0,0.0,194375.25,194375.25,0.0,0.0,0.0,timing,C01228,customer,enterprise,False,on pattern
+0.0,0.0,142523.0,142523.0,0.0,0.0,0.0,timing,C00299,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,97583.64,97583.64,0.0,0.0,0.0,timing,C00306,customer,mid_market,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; on pattern
+0.0,0.0,280427.2,280427.2,0.0,0.0,0.0,timing,C00309,customer,mid_market,False,installment 3/4; installment 4/4
+0.0,0.0,97064.2,97064.2,0.0,0.0,0.0,timing,C00372,customer,mid_market,False,installment 4/4; on pattern
+0.0,0.0,27070.89,27070.89,0.0,0.0,-0.0,timing,C00377,customer,mid_market,False,disputed; installment 10/12; installment 6/12; installment 7/12; installment 8/12; installment 9/12; on pattern
+0.0,0.0,57417.7,57417.7,0.0,0.0,0.0,timing,C01111,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,20403.0,20403.0,0.0,0.0,0.0,timing,C01121,customer,smb,False,installment 2/12; installment 3/12; installment 4/12; installment 5/12; installment 6/12; installment 7/12
+0.0,0.0,27020.0,27020.0,0.0,0.0,0.0,timing,C01123,customer,mid_market,False,installment 2/4; on pattern
+0.0,0.0,120563.45,120563.45,0.0,0.0,0.0,timing,C01125,customer,mid_market,False,on pattern
+0.0,0.0,87800.5,87800.5,0.0,0.0,0.0,timing,C01127,customer,mid_market,False,on pattern
+0.0,0.0,418441.8,418441.8,0.0,0.0,0.0,timing,C01226,customer,enterprise,False,installment 2/4; on pattern

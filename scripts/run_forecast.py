@@ -14,9 +14,7 @@ Writes outputs/runs/<run_id>/:
 from __future__ import annotations
 
 import argparse
-import json
 import sys
-from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -24,25 +22,7 @@ import pandas as pd
 from cashforecast.config import PROJECT_ROOT
 from cashforecast.data.loaders import load_dataset, load_manifest
 from cashforecast.engine.forecast import run_forecast
-
-
-def write_run(res, out_root: Path) -> Path:
-    run_id = f"{res.as_of:%Y-%m-%d}_{datetime.now():%Y%m%dT%H%M%S}"
-    run_dir = out_root / run_id
-    run_dir.mkdir(parents=True, exist_ok=True)
-    (run_dir / "summary.json").write_text(
-        json.dumps({"run_id": run_id, **res.summary}, indent=2, default=str)
-    )
-    (run_dir / "assumptions.json").write_text(json.dumps(res.assumptions, indent=2, default=str))
-    res.weekly.round(2).to_csv(run_dir / "weekly.csv", index=False)
-    detail = res.daily_detail.copy()
-    num = detail.select_dtypes("number").columns
-    detail[num] = detail[num].round(2)
-    detail.to_csv(run_dir / "daily_detail.csv", index=False)
-    res.daily.to_parquet(run_dir / "daily.parquet", index=False)
-    res.lines.to_parquet(run_dir / "lines.parquet", index=False)
-    (out_root / "LATEST").write_text(run_id)
-    return run_dir
+from cashforecast.outputs.artifacts import write_facts, write_forecast
 
 
 def main() -> int:
@@ -60,7 +40,8 @@ def main() -> int:
         print(f"--as-of cannot be after the data's as_of ({data_as_of.date()})", file=sys.stderr)
         return 2
     res = run_forecast(load_dataset(args.data), as_of, data_as_of)
-    run_dir = write_run(res, args.out)
+    run_dir = write_forecast(res, args.out)
+    write_facts(run_dir)
 
     s = res.summary
     print(f"Run {run_dir.name} | horizon {s['as_of']} to {s['horizon_end']}")

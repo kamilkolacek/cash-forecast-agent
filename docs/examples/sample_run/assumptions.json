@@ -1,0 +1,120 @@
+{
+  "receipts": {
+    "renewal_rates": {
+      "churn": {
+        "enterprise": 0.071,
+        "mid_market": 0.1028,
+        "smb": 0.1916
+      },
+      "expansion": {
+        "enterprise": 0.1554,
+        "mid_market": 0.22,
+        "smb": 0.3419
+      },
+      "renewal_billing_delay_days": 2.4
+    },
+    "archetype_days_late": {
+      "enterprise": 20.5,
+      "mid_market": 8.6,
+      "smb": -6.8
+    },
+    "fx_spot": {
+      "USD": 1.0,
+      "GBP": 1.1232534900519433,
+      "CAD": 0.6679882350641693
+    },
+    "open_ar_rules": {
+      "disputed": "collect 80% at cutoff+45d",
+      "behavior_break": "collect 50% at cutoff+30d (beyond 2 sd + 7d)",
+      "modestly_late": "collect 100% at cutoff+7d"
+    }
+  },
+  "disbursements": {
+    "payroll_per_run_usd": {
+      "US01": {
+        "net_pay": 2115467.0,
+        "taxes_benefits": 1142746.0
+      },
+      "UK01": {
+        "net_pay": 1300406.0,
+        "taxes_benefits": 705935.0
+      },
+      "CA01": {
+        "net_pay": 327394.0,
+        "taxes_benefits": 177728.0
+      }
+    },
+    "ap": {
+      "cloud_hosting": {
+        "monthly_run_rate": 2483972.0,
+        "avg_terms_days": 30.0,
+        "terms_mix": {
+          "30": 1.0
+        },
+        "seasonality": {
+          "2026-11": 1.022,
+          "2026-12": 1.044,
+          "2027-01": 2.976,
+          "2027-02": 1.066
+        }
+      },
+      "marketing_programs": {
+        "monthly_run_rate": 1548193.0,
+        "avg_terms_days": 30.0,
+        "terms_mix": {
+          "30": 1.0
+        },
+        "seasonality": {
+          "2026-11": 0.764,
+          "2026-12": 0.781,
+          "2027-01": 0.795,
+          "2027-02": 0.798
+        }
+      },
+      "other_ap": {
+        "monthly_run_rate": 827991.0,
+        "avg_terms_days": 44.8,
+        "terms_mix": {
+          "30": 0.372,
+          "45": 0.273,
+          "60": 0.356
+        },
+        "seasonality": {
+          "2026-11": 1.022,
+          "2026-12": 1.044,
+          "2027-01": 1.063,
+          "2027-02": 1.066
+        }
+      },
+      "rent_facilities": {
+        "monthly_run_rate": 583333.0,
+        "avg_terms_days": 0.0,
+        "terms_mix": {
+          "0": 1.0
+        },
+        "seasonality": {
+          "2026-11": 1.0,
+          "2026-12": 1.0,
+          "2027-01": 1.0,
+          "2027-02": 1.0
+        }
+      },
+      "software_vendors": {
+        "monthly_run_rate": 1034988.0,
+        "avg_terms_days": 37.6,
+        "terms_mix": {
+          "30": 0.495,
+          "45": 0.505
+        },
+        "seasonality": {
+          "2026-11": 1.022,
+          "2026-12": 1.044,
+          "2027-01": 1.063,
+          "2027-02": 1.066
+        }
+      }
+    },
+    "capex_avg_slippage_days": 20.5,
+    "bank_fees_per_business_day": 219.82
+  }
+}

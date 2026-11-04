@@ -1,0 +1,343 @@
+{
+  "passed": true,
+  "errors": 0,
+  "warnings": 3,
+  "findings": [
+    {
+      "check": "schema:customers",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:contracts",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:pipeline",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:invoices",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:receipts",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:vendors",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:ap_bills",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:ap_payments",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:payroll",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:commissions",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:debt_schedule",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:capex_plan",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:tax_calendar",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:fx_rates",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:bank_transactions",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:bank_balances",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "schema:arr_monthly",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "ok",
+      "data": {}
+    },
+    {
+      "check": "tie:receipts_to_bank",
+      "severity": "ERROR",
+      "passed": "True",
+      "detail": "Customer receipts: subledger 416,845,974.03 vs bank 416,845,974.03 (diff 0.00)",
+      "data": {}
+    },
+    {
+      "check": "tie:ap_to_bank",
+      "severity": "ERROR",
+      "passed": "True",
+      "detail": "AP payments: subledger -137,253,098.49 vs bank -137,253,098.49 (diff 0.00)",
+      "data": {}
+    },
+    {
+      "check": "tie:payroll_to_bank",
+      "severity": "ERROR",
+      "passed": "True",
+      "detail": "Payroll: subledger -224,714,007.25 vs bank -224,714,007.25 (diff 0.00)",
+      "data": {}
+    },
+    {
+      "check": "tie:commissions_to_bank",
+      "severity": "ERROR",
+      "passed": "True",
+      "detail": "Commissions: subledger -9,759,382.20 vs bank -9,759,382.20 (diff 0.00)",
+      "data": {}
+    },
+    {
+      "check": "tie:bank_rollforward",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "max daily roll-forward break 0.00",
+      "data": {}
+    },
+    {
+      "check": "tie:receipts_in_bank",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "0 receipts rows not found in bank",
+      "data": {}
+    },
+    {
+      "check": "tie:ap_payments_in_bank",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "0 ap_payments rows not found in bank",
+      "data": {}
+    },
+    {
+      "check": "ar:open_balance_math",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "0 invoices where open != amount - paid",
+      "data": {}
+    },
+    {
+      "check": "ar:no_overpayment",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "0 overpaid invoices",
+      "data": {}
+    },
+    {
+      "check": "ar:receipt_after_issue",
+      "severity": "ERROR",
+      "passed": true,
+      "detail": "0 receipts dated before their invoice",
+      "data": {}
+    },
+    {
+      "check": "dq:duplicate_ap_payment",
+      "severity": "WARNING",
+      "passed": false,
+      "detail": "1 bill(s) paid more than once",
+      "data": {
+        "bills": [
+          {
+            "bill_id": "B002581",
+            "payments": [
+              "P002587",
+              "P002587-DUP"
+            ],
+            "amount_usd": 190328.37
+          }
+        ]
+      }
+    },
+    {
+      "check": "dq:stale_undisputed_ar",
+      "severity": "WARNING",
+      "passed": false,
+      "detail": "4 undisputed invoices >60 days past due ($4,566,000)",
+      "data": {
+        "invoices": [
+          {
+            "invoice_id": "INV008127",
+            "customer_id": "C00327",
+            "days_past_due": 116,
+            "amount_usd_at_issue": 182421.18
+          },
+          {
+            "invoice_id": "INV008204",
+            "customer_id": "C00005",
+            "days_past_due": 79,
+            "amount_usd_at_issue": 4037048.61
+          },
+          {
+            "invoice_id": "INV008283",
+            "customer_id": "C00042",
+            "days_past_due": 72,
+            "amount_usd_at_issue": 340716.32
+          },
+          {
+            "invoice_id": "INV008516",
+            "customer_id": "C00223",
+            "days_past_due": 87,
+            "amount_usd_at_issue": 5814.06
+          }
+        ]
+      }
+    },
+    {
+      "check": "dq:payment_behavior_break",
+      "severity": "WARNING",
+      "passed": false,
+      "detail": "10 customer(s) paying well outside their normal pattern ($4,724,026 open)",
+      "data": {
+        "invoices": [
+          {
+            "invoice_id": "INV008127",
+            "customer_id": "C00327",
+            "days_past_due": 116,
+            "threshold": 25.0,
+            "amount_usd_at_issue": 182421.2
+          },
+          {
+            "invoice_id": "INV008204",
+            "customer_id": "C00005",
+            "days_past_due": 79,
+            "threshold": 65.0,
+            "amount_usd_at_issue": 4037048.6
+          },
+          {
+            "invoice_id": "INV008283",
+            "customer_id": "C00042",
+            "days_past_due": 72,
+            "threshold": 49.0,
+            "amount_usd_at_issue": 340716.3
+          },
+          {
+            "invoice_id": "INV008516",
+            "customer_id": "C00223",
+            "days_past_due": 87,
+            "threshold": 25.0,
+            "amount_usd_at_issue": 5814.1
+          },
+          {
+            "invoice_id": "INV009103",
+            "customer_id": "C00307",
+            "days_past_due": 42,
+            "threshold": 25.0,
+            "amount_usd_at_issue": 28541.5
+          },
+          {
+            "invoice_id": "INV009195",
+            "customer_id": "C00471",
+            "days_past_due": 36,
+            "threshold": 25.0,
+            "amount_usd_at_issue": 99890.2
+          },
+          {
+            "invoice_id": "INV009239",
+            "customer_id": "C00748",
+            "days_past_due": 32,
+            "threshold": 15.0,
+            "amount_usd_at_issue": 8345.2
+          },
+          {
+            "invoice_id": "INV009263",
+            "customer_id": "C01095",
+            "days_past_due": 31,
+            "threshold": 15.0,
+            "amount_usd_at_issue": 3316.1
+          },
+          {
+            "invoice_id": "INV009373",
+            "customer_id": "C00623",
+            "days_past_due": 52,
+            "threshold": 15.0,
+            "amount_usd_at_issue": 16255.9
+          },
+          {
+            "invoice_id": "INV009709",
+            "customer_id": "C00763",
+            "days_past_due": 25,
+            "threshold": 15.0,
+            "amount_usd_at_issue": 1677.0
+          }
+        ]
+      }
+    },
+    {
+      "check": "dq:overdue_concentration",
+      "severity": "INFO",
+      "passed": true,
+      "detail": "top 5 customers hold 67% of overdue AR",
+      "data": {
+        "top": {
+          "C00005": 4037049.0,
+          "C00079": 1555462.0,
+          "C00058": 1046814.0,
+          "C00073": 463607.0,
+          "C00083": 373262.0
+        }
+      }
+    }
+  ]
+}

@@ -5,17 +5,34 @@
       "Bash(make test)",
       "Bash(make data)",
       "Bash(make forecast)",
+      "Bash(make weekly)",
       "Bash(make backtest)",
+      "Bash(make dashboard)",
       "Bash(pytest*)",
       "Bash(ruff*)",
       "Read(./**)",
-      "Write(./outputs/**)"
+      "Write(./outputs/**)",
+      "Edit(./outputs/**)"
     ],
     "deny": [
       "Read(./.env)",
       "Write(./data/raw/**)",
+      "Edit(./data/raw/**)",
       "Bash(curl*)",
       "Bash(wget*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/check_numbers.py\""
+          }
+        ]
+      }
     ]
   }
 }

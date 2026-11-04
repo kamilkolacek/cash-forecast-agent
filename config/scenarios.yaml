@@ -1,21 +1,38 @@
+# Each scenario is a list of shocks applied to the base forecast's line items.
+# Shock types (all fields required unless marked optional):
+#   renewal_slip         pct_arr, delay_days        share of renewal cash pushed later
+#   churn                pct_renewals_lost          share of renewal cash lost
+#   customer_delay       target, delay_days         target = top_whale | top_whales | <customer_id>
+#   collections_delay    delay_days                 all customer receipts later (negative = sooner)
+#   pipeline_accelerate  deal_rank, advance_days    nth-largest open deal(s) close earlier, at 100%
+#                                                   (deal_rank may be a list, e.g. [1, 2, 3])
+#   payroll_adjust       pct_change, effective_week payroll scaled from that week on
+#   one_off              date, amount_usd, category one-time item (negative = outflow)
 scenarios:
   base:
     description: Current assumptions, no shocks
     shocks: []
   downside:
-    description: Renewal slippage and whale late payment
+    description: Renewal slippage and the largest whale paying 60 days late
     shocks:
       - { type: renewal_slip, pct_arr: 0.10, delay_days: 45 }
       - { type: customer_delay, target: top_whale, delay_days: 60 }
+  severe_downside:
+    description: All whales 60 days late, 15% renewal churn, collections 10 days slower
+    shocks:
+      - { type: customer_delay, target: top_whales, delay_days: 60 }
+      - { type: churn, pct_renewals_lost: 0.15 }
+      - { type: collections_delay, delay_days: 10 }
   churn_shock:
     description: Elevated churn on upcoming renewals
     shocks:
       - { type: churn, pct_renewals_lost: 0.15 }
   upside:
-    description: Accelerated enterprise deal closes early
+    description: Top 5 open deals close 30 days early at 100%; collections 5 days faster
     shocks:
-      - { type: pipeline_accelerate, deal_rank: 1, advance_days: 30 }
+      - { type: pipeline_accelerate, deal_rank: [1, 2, 3, 4, 5], advance_days: 30 }
+      - { type: collections_delay, delay_days: -5 }
   hiring_freeze:
-    description: Pause open requisitions
+    description: Pause open requisitions from week 3
     shocks:
       - { type: payroll_adjust, pct_change: -0.03, effective_week: 3 }

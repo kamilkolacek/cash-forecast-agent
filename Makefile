@@ -1,4 +1,4 @@
-.PHONY: setup lint typecheck test data forecast backtest dashboard demo eval clean
+.PHONY: setup lint typecheck test data forecast weekly backtest dashboard demo eval clean
 
 setup:
 	uv venv && uv pip install -e ".[dev]" && pre-commit install
@@ -18,13 +18,16 @@ data:
 forecast:
 	python scripts/run_forecast.py
 
+weekly:
+	python scripts/run_weekly.py
+
 backtest:
 	python scripts/run_backtest.py
 
 dashboard:
 	streamlit run app/Home.py
 
-demo: data forecast dashboard
+demo: data weekly dashboard
 
 eval:
 	pytest -m eval tests/evals

@@ -4,7 +4,9 @@ A Claude Code agent that produces a **13-week direct-method cash forecast** for 
 fictional B2B SaaS company, with variance analysis, scenarios, liquidity risk flags,
 a CFO memo, and a Streamlit dashboard. All data is synthetic.
 
-> **Status:** Phase 2–3 (forecast engine and backtest). See the roadmap below.
+> **Status:** Phase 4–5 (Claude Code layer, variance, scenarios). See the roadmap below.
+>
+> **See it first:** a sample [CFO memo](docs/examples/sample_run/memo.md) and the [facts sheet](docs/examples/sample_run/facts.md) it was written from.
 
 ## How it works
 
@@ -34,6 +36,7 @@ make setup        # create venv, install, enable pre-commit
 make test         # run tests
 make data         # generate synthetic data (~30s)
 make forecast     # run the 13-week forecast
+make weekly       # forecast + variance + scenarios + facts sheet
 make backtest     # walk-forward accuracy report (~20s)
 make dashboard    # launch the web UI (Phase 6)
 ```
@@ -51,14 +54,23 @@ Walk-forward backtest over 33 cutoffs; WAPE of projected closing cash vs actual:
 
 See [docs/methodology.md](docs/methodology.md) for methods and metric definitions.
 
+## The Claude Code layer
+
+| Piece | What it does |
+|---|---|
+| `CLAUDE.md` | Project rules: Python does the math; never state an untraceable figure |
+| Skills (`.claude/skills/`) | `cash-forecasting`, `saas-receipts`, `variance-analysis`, `treasury-risk`, `cfo-narrative` |
+| Subagents (`.claude/agents/`) | `data-validator` (read-only pre-run checks), `forecast-reviewer` (independent review → `review.md`) |
+| Hook (`.claude/hooks/check_numbers.py`) | Blocks any `memo.md` containing a figure not found in the run's artifacts |
+
 ## Slash commands
 
 | Command | Purpose |
 |---|---|
 | `/generate-data` | Build or refresh the synthetic dataset |
-| `/forecast` | Full weekly run: validate, forecast, variance, scenarios, risk, memo |
-| `/variance` | Forecast vs actuals bridge |
-| `/scenario <name>` | Run a named or custom scenario |
+| `/forecast` | Full weekly cycle: validate → engine → variance → scenarios → independent review → memo |
+| `/variance` | Forecast vs actuals, split into timing and permanent |
+| `/scenario <what-if>` | Named scenario, or a plain-English what-if translated into shocks |
 | `/backtest` | Walk-forward accuracy report |
 | `/cash-memo` | CFO narrative from the latest run |
 | `/validate` | Data tie-outs and numeric fidelity check |
@@ -69,7 +81,7 @@ See [docs/methodology.md](docs/methodology.md) for methods and metric definition
 - [x] Phase 0: Scaffold, config, CI
 - [x] Phase 1: Synthetic data generator (`v0.1-data`)
 - [x] Phase 2–3: Forecast engine and backtest (`v0.1`)
-- [ ] Phase 4–5: Claude Code layer: skills, commands, subagents, hooks (`v0.2`)
+- [x] Phase 4–5: Claude Code layer: skills, commands, subagents, hooks (`v0.2`)
 - [ ] Phase 6: Excel workbook, CFO memo, Streamlit dashboard (`v0.3`)
 - [ ] Phase 7–8: Evals and hardening (`v1.0`)
 
