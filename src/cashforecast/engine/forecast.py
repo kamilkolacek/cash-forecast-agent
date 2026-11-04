@@ -28,9 +28,16 @@ class ForecastResult:
 
 
 def run_forecast(
-    data: dict[str, pd.DataFrame], as_of: pd.Timestamp, data_as_of: pd.Timestamp | None = None
+    data: dict[str, pd.DataFrame],
+    as_of: pd.Timestamp,
+    data_as_of: pd.Timestamp | None = None,
+    horizon_weeks: int | None = None,
 ) -> ForecastResult:
+    """horizon_weeks overrides the configured horizon (used to extend a prior forecast
+    to a later comparison date for variance analysis)."""
     settings = load_forecast_settings()
+    if horizon_weeks:
+        settings = settings.model_copy(update={"horizon_weeks": horizon_weeks})
     company = load_yaml("company.yaml")
     data_as_of = pd.Timestamp(data_as_of or as_of)
     snap = take_snapshot(data, pd.Timestamp(as_of), data_as_of)

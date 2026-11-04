@@ -76,3 +76,43 @@ is high even when **cumulative** receipts are accurate.
 **Known limitation:** there are no historical pipeline snapshots, so past cutoffs use a
 pipeline reconstructed from new logos that actually closed. This omits lost deals and
 slightly flatters new-bookings accuracy in the backtest (not in the live forecast).
+
+## Variance: timing vs permanent
+
+`engine/variance.py` compares a prior forecast (made at P) with actuals through C.
+
+- **Variance** = actual(P..C) − forecast(P..C), keyed by customer for receipts and by
+  category otherwise. Positive is favorable.
+- **Permanent** = [actual(P..C) + current forecast(C..X)] − prior forecast(P..X):
+  cash no longer expected at all.
+- **Timing** = variance − permanent: cash that is late but still coming.
+
+X is 13 weeks *beyond* the current horizon, and both forecasts are run out to it. This
+matters: with X at the horizon end, a renewal whose invoice keeps not going out slides
+past the edge each week and gets misclassified as permanent. Measuring through a longer
+window makes "permanent" mean what a CFO means: churn, write-offs, changed amounts and
+run-rate changes. These extended runs are used only for the split; the reported forecast
+stays at 13 weeks.
+
+Identities (tested): timing + permanent = variance for every driver; drivers sum to the
+closing-cash difference at C; the permanent total equals revised minus prior forecast
+cash at X.
+
+## Scenarios
+
+`engine/scenarios.py` applies shocks from `config/scenarios.yaml` to the base forecast's
+line items and re-runs the roll-forward. Shock types: renewal slip, churn, customer delay
+(including whales), collections delay, pipeline acceleration, payroll adjustment, and
+one-off items. Each scenario reports ending and minimum cash, headroom to the floor and
+covenant, flagged weeks, and a suggested revolver draw (rounded up to $1M) when the floor
+is breached. Interest income is held at the base forecast.
+
+## Number traceability
+
+The memo is written by Claude, so it is the one place a wrong number could enter.
+`outputs/traceability.py` extracts every `$` amount and `%` from `memo.md` and requires
+each to match a value in the run's artifacts at the precision written ("$58.7M" matches
+58,726,680). A Claude Code PostToolUse hook runs this on every write to `memo.md` and
+blocks the write with feedback if anything is untraceable. `facts.md` lists pre-formatted
+figures so the memo can cite them directly. An example run and memo are in
+`docs/examples/sample_run/`.

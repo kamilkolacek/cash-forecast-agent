@@ -1,0 +1,234 @@
+{
+  "as_of": "2026-11-29",
+  "scenarios": {
+    "base": {
+      "description": "Current assumptions, no shocks",
+      "shocks": [],
+      "ending_cash_usd": 69409482.72,
+      "change_vs_base_usd": 0.0,
+      "min_cash_usd": 55638052.34,
+      "min_cash_date": "2026-12-01",
+      "flags": [],
+      "covenant_headroom_usd": 25638052.34,
+      "floor_headroom_usd": 20638052.34,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 95638052.34,
+      "suggested_revolver_draw_usd": 0.0
+    },
+    "downside": {
+      "description": "Renewal slippage and the largest whale paying 60 days late",
+      "shocks": [
+        {
+          "type": "renewal_slip",
+          "pct_arr": 0.1,
+          "delay_days": 45
+        },
+        {
+          "type": "customer_delay",
+          "target": "top_whale",
+          "delay_days": 60
+        }
+      ],
+      "ending_cash_usd": 67775237.12,
+      "change_vs_base_usd": -1634245.6,
+      "min_cash_usd": 52306071.48,
+      "min_cash_date": "2027-01-01",
+      "flags": [],
+      "covenant_headroom_usd": 22306071.48,
+      "floor_headroom_usd": 17306071.48,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 92306071.48,
+      "suggested_revolver_draw_usd": 0.0
+    },
+    "severe_downside": {
+      "description": "All whales 60 days late, 15% renewal churn, collections 10 days slower",
+      "shocks": [
+        {
+          "type": "customer_delay",
+          "target": "top_whales",
+          "delay_days": 60
+        },
+        {
+          "type": "churn",
+          "pct_renewals_lost": 0.15
+        },
+        {
+          "type": "collections_delay",
+          "delay_days": 10
+        }
+      ],
+      "ending_cash_usd": 53504148.31,
+      "change_vs_base_usd": -15905334.41,
+      "min_cash_usd": 45708503.61,
+      "min_cash_date": "2027-01-08",
+      "flags": [],
+      "covenant_headroom_usd": 15708503.61,
+      "floor_headroom_usd": 10708503.61,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 85708503.61,
+      "suggested_revolver_draw_usd": 0.0
+    },
+    "churn_shock": {
+      "description": "Elevated churn on upcoming renewals",
+      "shocks": [
+        {
+          "type": "churn",
+          "pct_renewals_lost": 0.15
+        }
+      ],
+      "ending_cash_usd": 66644922.88,
+      "change_vs_base_usd": -2764559.84,
+      "min_cash_usd": 55626715.36,
+      "min_cash_date": "2026-12-01",
+      "flags": [],
+      "covenant_headroom_usd": 25626715.36,
+      "floor_headroom_usd": 20626715.36,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 95626715.36,
+      "suggested_revolver_draw_usd": 0.0
+    },
+    "upside": {
+      "description": "Top 5 open deals close 30 days early at 100%; collections 5 days faster",
+      "shocks": [
+        {
+          "type": "pipeline_accelerate",
+          "deal_rank": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "advance_days": 30
+        },
+        {
+          "type": "collections_delay",
+          "delay_days": -5
+        }
+      ],
+      "ending_cash_usd": 71488840.16,
+      "change_vs_base_usd": 2079357.44,
+      "min_cash_usd": 55966513.22,
+      "min_cash_date": "2026-11-29",
+      "flags": [],
+      "covenant_headroom_usd": 25966513.22,
+      "floor_headroom_usd": 20966513.22,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 95966513.22,
+      "suggested_revolver_draw_usd": 0.0
+    },
+    "hiring_freeze": {
+      "description": "Pause open requisitions from week 3",
+      "shocks": [
+        {
+          "type": "payroll_adjust",
+          "pct_change": -0.03,
+          "effective_week": 3
+        }
+      ],
+      "ending_cash_usd": 70188835.93,
+      "change_vs_base_usd": 779353.21,
+      "min_cash_usd": 55638052.34,
+      "min_cash_date": "2026-12-01",
+      "flags": [],
+      "covenant_headroom_usd": 25638052.34,
+      "floor_headroom_usd": 20638052.34,
+      "revolver_available_usd": 40000000.0,
+      "total_liquidity_at_low_point_usd": 95638052.34,
+      "suggested_revolver_draw_usd": 0.0
+    }
+  },
+  "weekly_closing": {
+    "base": {
+      "W1": 61295157.22,
+      "W2": 67511498.16,
+      "W3": 64769146.96,
+      "W4": 64174801.39,
+      "W5": 62178682.54,
+      "W6": 62436625.15,
+      "W7": 63675180.52,
+      "W8": 63634626.43,
+      "W9": 64239215.49,
+      "W10": 62550355.7,
+      "W11": 65521197.67,
+      "W12": 67056703.58,
+      "W13": 69409482.72
+    },
+    "downside": {
+      "W1": 57358695.76,
+      "W2": 57687356.9,
+      "W3": 54938998.28,
+      "W4": 54338523.26,
+      "W5": 52306071.48,
+      "W6": 52462053.44,
+      "W7": 53579999.12,
+      "W8": 53462702.25,
+      "W9": 53951716.39,
+      "W10": 57995998.3,
+      "W11": 64464134.64,
+      "W12": 65835495.36,
+      "W13": 67775237.12
+    },
+    "severe_downside": {
+      "W1": 53355356.24,
+      "W2": 51986902.37,
+      "W3": 50252333.23,
+      "W4": 48309616.81,
+      "W5": 45713396.27,
+      "W6": 45708503.61,
+      "W7": 47337282.53,
+      "W8": 47853258.7,
+      "W9": 47070632.44,
+      "W10": 46484488.2,
+      "W11": 50545170.27,
+      "W12": 55310991.45,
+      "W13": 53504148.31
+    },
+    "churn_shock": {
+      "W1": 61275739.06,
+      "W2": 67488471.34,
+      "W3": 64737109.01,
+      "W4": 64133569.26,
+      "W5": 62082951.03,
+      "W6": 62187952.66,
+      "W7": 63234256.52,
+      "W8": 63068787.78,
+      "W9": 63491207.79,
+      "W10": 61568111.93,
+      "W11": 63853440.8,
+      "W12": 65051600.52,
+      "W13": 66644922.88
+    },
+    "upside": {
+      "W1": 67709764.76,
+      "W2": 69496832.86,
+      "W3": 69009736.02,
+      "W4": 68169709.66,
+      "W5": 66252813.13,
+      "W6": 66572066.67,
+      "W7": 66828540.75,
+      "W8": 68089993.41,
+      "W9": 68608244.18,
+      "W10": 70140267.9,
+      "W11": 71691657.55,
+      "W12": 75565804.57,
+      "W13": 71488840.16
+    },
+    "hiring_freeze": {
+      "W1": 61295157.22,
+      "W2": 67511498.16,
+      "W3": 64818582.98,
+      "W4": 64326713.6,
+      "W5": 62401208.82,
+      "W6": 62722615.44,
+      "W7": 64005274.99,
+      "W8": 64033516.74,
+      "W9": 64732578.41,
+      "W10": 63122336.27,
+      "W11": 66127460.62,
+      "W12": 67741584.18,
+      "W13": 70188835.93
+    }
+  },
+  "note": "Interest income is held at the base forecast in all scenarios."
+}

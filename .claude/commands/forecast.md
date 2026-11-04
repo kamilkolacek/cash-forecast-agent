@@ -1,22 +1,23 @@
 ---
-description: Run the 13-week cash forecast and summarize it for the CFO
-argument-hint: "[--as-of YYYY-MM-DD]"
+description: Full weekly cash forecast cycle - validate, forecast, variance, scenarios, independent review, CFO memo
+argument-hint: "[--simulate-week N]"
 ---
 
-Run the weekly cash forecast. (Phase 2–3 version: engine run and summary. Variance,
-scenarios, independent review and the memo are added in Phase 4–5.)
+Run the weekly cash forecast end to end. Use the `cash-forecasting`, `variance-analysis`,
+`treasury-risk` and `cfo-narrative` skills.
 
-1. Run `python scripts/validate.py`. If any ERROR check fails, stop and report it.
-   List WARNING findings; they become risks in the summary.
-2. Run `python scripts/run_forecast.py $ARGUMENTS`.
-3. Read `summary.json`, `weekly.csv` and `assumptions.json` from the run directory printed
-   on the last line (also named in `outputs/runs/LATEST`).
-4. Summarize for a CFO in under 250 words:
-   - Opening, ending and minimum cash with the minimum's date, versus the internal floor
-     and the covenant. Name any flagged weeks.
-   - The 2–3 largest drivers of the 13-week movement, by category from `weekly.csv`.
-   - Key assumptions that most affect the result (from `assumptions.json`): renewal
-     churn/expansion, open-AR rules applied to late or disputed invoices, AP seasonality.
-   - Risks from validation warnings, such as customers outside their normal payment pattern.
-5. Every figure you state must appear in the run artifacts. Do not compute new totals
-   in prose; if you need one, say which artifact line it comes from.
+1. **Validate.** Use the `data-validator` subagent. If its verdict is FAIL, stop and report.
+2. **Run the engine.** `python scripts/run_weekly.py $ARGUMENTS`. The last line printed
+   is the run directory; call it RUN.
+3. **Independent review.** Use the `forecast-reviewer` subagent on RUN. It writes
+   `RUN/review.md`.
+4. **Write the memo.** Read `RUN/facts.md` and `RUN/review.md`, then write `RUN/memo.md`
+   using the `cfo-narrative` template. Address every HIGH review finding. Include the
+   data-validator's action items under Risks and actions.
+5. **Traceability.** A hook checks every figure in `memo.md` when you write it. If it
+   blocks, fix the figures from `facts.md` and write again. Finish by running
+   `python scripts/check_memo.py` and confirming it passes.
+6. **Report back** in under 120 words: ending cash, low point, any flags, the biggest
+   variance driver, the reviewer's verdict, and the memo path.
+
+Never state a figure that isn't in the run artifacts.
