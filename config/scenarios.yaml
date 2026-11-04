@@ -1,0 +1,21 @@
+scenarios:
+  base:
+    description: Current assumptions, no shocks
+    shocks: []
+  downside:
+    description: Renewal slippage and whale late payment
+    shocks:
+      - { type: renewal_slip, pct_arr: 0.10, delay_days: 45 }
+      - { type: customer_delay, target: top_whale, delay_days: 60 }
+  churn_shock:
+    description: Elevated churn on upcoming renewals
+    shocks:
+      - { type: churn, pct_renewals_lost: 0.15 }
+  upside:
+    description: Accelerated enterprise deal closes early
+    shocks:
+      - { type: pipeline_accelerate, deal_rank: 1, advance_days: 30 }
+  hiring_freeze:
+    description: Pause open requisitions
+    shocks:
+      - { type: payroll_adjust, pct_change: -0.03, effective_week: 3 }

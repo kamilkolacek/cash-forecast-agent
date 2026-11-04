@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/*)",
+      "Bash(make test)",
+      "Bash(make data)",
+      "Bash(make forecast)",
+      "Bash(make backtest)",
+      "Bash(pytest*)",
+      "Bash(ruff*)",
+      "Read(./**)",
+      "Write(./outputs/**)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Write(./data/raw/**)",
+      "Bash(curl*)",
+      "Bash(wget*)"
+    ]
+  }
+}

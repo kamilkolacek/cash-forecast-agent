@@ -1,0 +1,18 @@
+forecast:
+  horizon_weeks: 13
+  daily_detail_weeks: 2          # weeks 1-2 daily, weeks 3-13 weekly
+  week_start: Monday
+  reporting_currency: USD
+  min_cash_threshold: 35_000_000 # internal floor, above the covenant
+  revolver_auto_draw: false
+
+receipts:
+  method: ar_aging_plus_behavior # customer-level days-to-pay distributions
+  uninvoiced_sources: [renewals, pipeline]
+  pipeline_min_stage: 3
+  renewal_slip_probability: 0.08
+
+backtest:
+  min_training_weeks: 26
+  baseline: naive_run_rate
+  targets: { weeks_1_4_wape: 0.10, weeks_5_13_wape: 0.20 }

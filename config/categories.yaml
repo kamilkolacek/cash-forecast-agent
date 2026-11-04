@@ -1,0 +1,26 @@
+# Direct-method cash flow categories used across engine, workbook and dashboard
+receipts:
+  - customer_collections_existing_ar
+  - customer_collections_renewals
+  - customer_collections_new_bookings
+  - interest_income
+  - other_receipts
+disbursements:
+  operating:
+    - payroll_net
+    - payroll_taxes_benefits
+    - commissions
+    - cloud_hosting
+    - software_vendors
+    - marketing_programs
+    - rent_facilities
+    - other_ap
+  non_operating:
+    - debt_principal
+    - debt_interest
+    - income_taxes
+    - vat_sales_tax
+    - capex
+financing:
+  - revolver_draw
+  - revolver_repayment

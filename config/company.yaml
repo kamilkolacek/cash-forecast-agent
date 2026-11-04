@@ -1,0 +1,57 @@
+# Synthetic company: Northwind Cloud, Inc. (fictional B2B SaaS enterprise)
+company:
+  name: Northwind Cloud, Inc.
+  reporting_currency: USD
+  fiscal_year_end_month: 12
+  history_months: 24
+  history_start: "2024-11-01"
+
+entities:
+  - { code: US01, name: Northwind Cloud Inc., currency: USD, arr_share: 0.70 }
+  - { code: UK01, name: Northwind Cloud Ltd., currency: GBP, arr_share: 0.20 }
+  - { code: CA01, name: Northwind Cloud Canada ULC, currency: CAD, arr_share: 0.10 }
+
+revenue:
+  starting_arr: 210_000_000
+  ending_arr_target: 250_000_000
+  gross_retention: 0.90
+  net_retention: 1.10
+  billing_mix: { annual: 0.60, quarterly: 0.25, monthly: 0.15 }
+  q4_bookings_weight: 0.38          # share of annual bookings landing in Q4
+  bad_debt_rate: 0.005
+
+customers:
+  count: 1200
+  archetypes:
+    enterprise:  { share: 0.15, terms_days: [45, 60], mean_days_late: 18, sd_days_late: 12, portal_payer: true }
+    mid_market:  { share: 0.45, terms_days: [30],     mean_days_late: 6,  sd_days_late: 6 }
+    smb:         { share: 0.40, terms_days: [0, 30],  mean_days_late: 2,  sd_days_late: 3, card_share: 0.6 }
+  whales: { count: 5, ar_concentration: 0.20 }
+  dispute_rate: 0.02
+  partial_payment_rate: 0.03
+
+expenses:
+  payroll_share_of_opex: 0.62
+  headcount: 1100
+  payroll_frequency: { US01: biweekly, UK01: monthly, CA01: semimonthly }
+  commission_rate_of_bookings: 0.10
+  commission_lag_months: 1
+  bonus_month: 3
+  cloud_hosting_pct_of_revenue: 0.14
+  cloud_commit_prepay_month: 1
+  ap_payment_runs: [Tue, Fri]
+  vendor_count: 400
+
+balance_sheet:
+  opening_cash: 85_000_000
+  term_loan: { principal: 60_000_000, rate: 0.075, amortization_quarterly: 1_500_000 }
+  revolver: { limit: 40_000_000, drawn: 0, rate: 0.08 }
+  covenants: { min_liquidity: 30_000_000 }
+
+capex:
+  annual_budget: 6_000_000
+  slippage_mean_days: 21
+
+tax:
+  us_estimated_quarterly: true
+  uk_vat_quarterly: true
