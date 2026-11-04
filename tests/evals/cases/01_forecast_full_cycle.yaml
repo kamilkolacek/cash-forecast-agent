@@ -1,0 +1,21 @@
+id: forecast_full_cycle
+description: >
+  The full /forecast cycle four weeks after the data date. The memo must exist, follow the
+  template, trace every figure, name the two whale drivers of last week's variance with the
+  right classification, and come with an independent review.
+setup: []
+prompt: "/forecast --simulate-week 4"
+checks:
+  - check: memo_exists
+  - check: memo_traceable
+  - check: memo_has_sections
+    sections: ["Bottom line", "13-week outlook", "Last week", "Scenarios", "Risks", "Key assumptions"]
+  - check: memo_mentions
+    terms: ["C00001", "C00005", "timing", "permanent"]
+  - check: memo_max_words
+    limit: 650
+  - check: file_in_run
+    name: review.md
+  - check: review_has_verdict
+  - check: response_traceable
+  - check: data_untouched

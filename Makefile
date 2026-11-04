@@ -1,4 +1,4 @@
-.PHONY: setup lint typecheck test data forecast weekly backtest dashboard demo eval clean
+.PHONY: setup lint typecheck test data forecast weekly backtest dashboard demo demo-data eval clean
 
 # Call tools from the project venv directly, so nothing needs activating first.
 BIN := .venv/bin
@@ -30,10 +30,17 @@ backtest:
 dashboard:
 	$(BIN)/streamlit run app/Home.py
 
-demo: data weekly dashboard
+# One command from a fresh clone: data, a live run, a run 4 weeks later (with a real
+# variance story), the accuracy report, then the dashboard.
+demo-data: data
+	$(BIN)/python scripts/run_weekly.py
+	$(BIN)/python scripts/run_weekly.py --simulate-week 4
+	-$(BIN)/python scripts/run_backtest.py
+
+demo: demo-data dashboard
 
 eval:
-	$(BIN)/pytest -m eval tests/evals
+	$(BIN)/pytest -m eval tests/evals -v
 
 clean:
 	rm -rf data/raw/* data/processed/* outputs/runs/* .pytest_cache .ruff_cache .mypy_cache

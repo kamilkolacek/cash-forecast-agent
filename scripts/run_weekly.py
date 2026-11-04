@@ -31,6 +31,7 @@ from cashforecast.outputs.artifacts import (
     write_validation,
     write_variance,
 )
+from cashforecast.outputs.audit import Audit
 from cashforecast.outputs.workbook import write_workbook
 
 
@@ -49,8 +50,16 @@ def main() -> int:
     )
     args = p.parse_args()
 
-    data_as_of = pd.Timestamp(load_manifest(args.data)["as_of"])
-    data = load_dataset(args.data)
+    try:
+        data_as_of = pd.Timestamp(load_manifest(args.data)["as_of"])
+        data = load_dataset(args.data)
+    except FileNotFoundError:
+        print(
+            f"No dataset at {args.data}. Run `make data` (or /generate-data) first.",
+            file=sys.stderr,
+        )
+        return 2
+    audit = Audit(args.data, simulate_week=args.simulate_week)
     report = validate(data, load_yaml("company.yaml")["balance_sheet"]["opening_cash"], data_as_of)
     if not report["passed"]:
         print(f"Validation FAILED with {report['errors']} error(s). No forecast produced.")
@@ -61,15 +70,22 @@ def main() -> int:
     if args.simulate_week:
         data = combine_with_holdout(data, load_dataset(args.data, holdout=True))
     cutoff = data_as_of + pd.Timedelta(weeks=args.simulate_week)
+    audit.params["cutoff"] = str(cutoff.date())
+    audit.step("load_and_validate")
 
     current = run_forecast(data, cutoff, data_as_of)
     run_dir = write_forecast(current, args.out)
     write_validation(run_dir, report)
+    audit.step("forecast")
     v = run_variance(data, cutoff - pd.Timedelta(days=7), cutoff, data_as_of)
     write_variance(run_dir, v)
+    audit.step("variance")
     write_scenarios(run_dir, run_scenarios(current, data))
+    audit.step("scenarios")
     write_facts(run_dir)
     workbook = write_workbook(run_dir)
+    audit.step("facts_and_workbook")
+    audit.write(run_dir)
 
     s, vs = current.summary, v.summary
     print(f"Validation passed ({report['warnings']} warnings)")

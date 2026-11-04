@@ -116,3 +116,12 @@ each to match a value in the run's artifacts at the precision written ("$58.7M" 
 blocks the write with feedback if anything is untraceable. `facts.md` lists pre-formatted
 figures so the memo can cite them directly. An example run and memo are in
 `docs/examples/sample_run/`.
+
+### What the traceability check does and doesn't guarantee
+
+It guarantees that every `$` amount and percentage in the memo exists somewhere in the run's
+artifacts at the precision written. It does not prove a figure is used in the right
+context: with thousands of artifact values, a wrong one-decimal `$M` figure can coincidentally
+round to some real value. The check therefore reliably blocks invented numbers, while
+context is covered by the `forecast-reviewer` subagent and by the agent evals, which check
+that the memo names the right drivers and classifications.

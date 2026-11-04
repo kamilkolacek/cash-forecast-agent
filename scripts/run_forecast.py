@@ -23,6 +23,7 @@ from cashforecast.config import PROJECT_ROOT
 from cashforecast.data.loaders import load_dataset, load_manifest
 from cashforecast.engine.forecast import run_forecast
 from cashforecast.outputs.artifacts import write_facts, write_forecast
+from cashforecast.outputs.audit import Audit
 from cashforecast.outputs.workbook import write_workbook
 
 
@@ -35,7 +36,15 @@ def main() -> int:
     p.add_argument("--out", type=Path, default=PROJECT_ROOT / "outputs" / "runs")
     args = p.parse_args()
 
-    data_as_of = pd.Timestamp(load_manifest(args.data)["as_of"])
+    try:
+        data_as_of = pd.Timestamp(load_manifest(args.data)["as_of"])
+    except FileNotFoundError:
+        print(
+            f"No dataset at {args.data}. Run `make data` (or /generate-data) first.",
+            file=sys.stderr,
+        )
+        return 2
+    audit = Audit(args.data, as_of=str((args.as_of or data_as_of).date()))
     as_of = args.as_of or data_as_of
     if as_of > data_as_of:
         print(f"--as-of cannot be after the data's as_of ({data_as_of.date()})", file=sys.stderr)
@@ -44,6 +53,8 @@ def main() -> int:
     run_dir = write_forecast(res, args.out)
     write_facts(run_dir)
     workbook = write_workbook(run_dir)
+    audit.step("forecast_and_outputs")
+    audit.write(run_dir)
 
     s = res.summary
     print(f"Run {run_dir.name} | horizon {s['as_of']} to {s['horizon_end']}")

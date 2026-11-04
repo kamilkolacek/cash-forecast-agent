@@ -13,7 +13,7 @@ from cashforecast.config import (
 
 
 def test_version() -> None:
-    assert __version__ == "0.0.1"
+    assert __version__ == "1.0.0"
 
 
 def test_forecast_settings_load() -> None:

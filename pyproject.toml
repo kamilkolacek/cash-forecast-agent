@@ -1,6 +1,6 @@
 [project]
 name = "cashforecast"
-version = "0.0.1"
+version = "1.0.0"
 description = "Claude Code agent for 13-week direct-method cash forecasting on synthetic SaaS data"
 readme = "README.md"
 license = { text = "MIT" }
