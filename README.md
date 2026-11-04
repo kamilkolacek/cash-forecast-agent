@@ -4,7 +4,7 @@ A Claude Code agent that produces a **13-week direct-method cash forecast** for 
 fictional B2B SaaS company, with variance analysis, scenarios, liquidity risk flags,
 a CFO memo, and a Streamlit dashboard. All data is synthetic.
 
-> **Status:** Phase 0 (scaffold). See the roadmap below.
+> **Status:** Phase 1 (synthetic data). See the roadmap below.
 
 ## How it works
 
@@ -32,7 +32,7 @@ git clone https://github.com/kamilkolacek/cash-forecast-agent.git
 cd cash-forecast-agent
 make setup        # create venv, install, enable pre-commit
 make test         # run tests
-make data         # generate synthetic data (Phase 1)
+make data         # generate synthetic data (~30s)
 make dashboard    # launch the web UI (Phase 6)
 ```
 
@@ -54,7 +54,7 @@ Then open the project in Claude Code and run `/forecast`.
 ## Roadmap
 
 - [x] Phase 0: Scaffold, config, CI
-- [ ] Phase 1: Synthetic data generator (`v0.1-data`)
+- [x] Phase 1: Synthetic data generator (`v0.1-data`)
 - [ ] Phase 2–3: Forecast engine and backtest (`v0.1`)
 - [ ] Phase 4–5: Claude Code layer: skills, commands, subagents, hooks (`v0.2`)
 - [ ] Phase 6: Excel workbook, CFO memo, Streamlit dashboard (`v0.3`)
