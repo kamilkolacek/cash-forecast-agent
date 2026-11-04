@@ -4,9 +4,9 @@ A Claude Code agent that produces a **13-week direct-method cash forecast** for 
 fictional B2B SaaS company, with variance analysis, scenarios, liquidity risk flags,
 a CFO memo, and a Streamlit dashboard. All data is synthetic.
 
-> **Status:** Phase 4–5 (Claude Code layer, variance, scenarios). See the roadmap below.
+> **Status:** Phase 6 (Excel workbook and dashboard). See the roadmap below.
 >
-> **See it first:** a sample [CFO memo](docs/examples/sample_run/memo.md) and the [facts sheet](docs/examples/sample_run/facts.md) it was written from.
+> **See it first:** a sample [CFO memo](docs/examples/sample_run/memo.md), the [facts sheet](docs/examples/sample_run/facts.md) it was written from, and the [Excel workbook](docs/examples/sample_run/cash_forecast_2026-11-29.xlsx).
 
 ## How it works
 
@@ -38,7 +38,7 @@ make data         # generate synthetic data (~30s)
 make forecast     # run the 13-week forecast
 make weekly       # forecast + variance + scenarios + facts sheet
 make backtest     # walk-forward accuracy report (~20s)
-make dashboard    # launch the web UI (Phase 6)
+make dashboard    # launch the web dashboard at http://localhost:8501
 ```
 
 Then open the project in Claude Code and run `/forecast`.
@@ -53,6 +53,21 @@ Walk-forward backtest over 33 cutoffs; WAPE of projected closing cash vs actual:
 | Weeks 5–13 | 6.0% | 20.2% | ≤20% |
 
 See [docs/methodology.md](docs/methodology.md) for methods and metric definitions.
+
+## Outputs
+
+Every run writes to `outputs/runs/<run_id>/`:
+
+| Output | For |
+|---|---|
+| `cash_forecast_<date>.xlsx` | Finance users. Six tabs (Summary, 13-Week Forecast, Daily, Variance, Scenarios, Assumptions). Engine figures in blue; totals and the cash roll-forward are live formulas |
+| `memo.md` | The CFO memo Claude writes from `facts.md` |
+| `facts.md` | Pre-formatted figures the memo must cite |
+| JSON / CSV / Parquet | Summary, weekly view, every source line, assumptions, variance, scenarios, validation |
+
+**Dashboard** (`make dashboard`): Home, Forecast (with drill-down to source lines), Variance
+bridge, Scenarios (with live what-if sliders), Receipts & AR, Liquidity & Risk, Backtest,
+and Run History.
 
 ## The Claude Code layer
 
@@ -82,7 +97,7 @@ See [docs/methodology.md](docs/methodology.md) for methods and metric definition
 - [x] Phase 1: Synthetic data generator (`v0.1-data`)
 - [x] Phase 2–3: Forecast engine and backtest (`v0.1`)
 - [x] Phase 4–5: Claude Code layer: skills, commands, subagents, hooks (`v0.2`)
-- [ ] Phase 6: Excel workbook, CFO memo, Streamlit dashboard (`v0.3`)
+- [x] Phase 6: Excel workbook, CFO memo, Streamlit dashboard (`v0.3`)
 - [ ] Phase 7–8: Evals and hardening (`v1.0`)
 
 ## License
