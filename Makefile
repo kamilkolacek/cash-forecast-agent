@@ -1,36 +1,39 @@
 .PHONY: setup lint typecheck test data forecast weekly backtest dashboard demo eval clean
 
+# Call tools from the project venv directly, so nothing needs activating first.
+BIN := .venv/bin
+
 setup:
-	uv venv && uv pip install -e ".[dev]" && pre-commit install
+	uv venv --allow-existing && uv pip install -e ".[dev]" && $(BIN)/pre-commit install
 
 lint:
-	ruff check src tests scripts app
+	$(BIN)/ruff check src tests scripts app
 
 typecheck:
-	mypy src
+	$(BIN)/mypy src
 
 test:
-	pytest
+	$(BIN)/pytest
 
 data:
-	python scripts/generate.py
+	$(BIN)/python scripts/generate.py
 
 forecast:
-	python scripts/run_forecast.py
+	$(BIN)/python scripts/run_forecast.py
 
 weekly:
-	python scripts/run_weekly.py
+	$(BIN)/python scripts/run_weekly.py
 
 backtest:
-	python scripts/run_backtest.py
+	$(BIN)/python scripts/run_backtest.py
 
 dashboard:
-	streamlit run app/Home.py
+	$(BIN)/streamlit run app/Home.py
 
 demo: data weekly dashboard
 
 eval:
-	pytest -m eval tests/evals
+	$(BIN)/pytest -m eval tests/evals
 
 clean:
 	rm -rf data/raw/* data/processed/* outputs/runs/* .pytest_cache .ruff_cache .mypy_cache

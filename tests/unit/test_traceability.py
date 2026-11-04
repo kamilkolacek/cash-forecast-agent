@@ -1,3 +1,4 @@
+import ast
 import json
 import subprocess
 import sys
@@ -63,6 +64,18 @@ def test_hook_blocks_bad_memo_and_ignores_other_files(tmp_path):
     other = run / "notes.md"
     other.write_text("Ending cash $70.0M.")
     assert call(other).returncode == 0
+
+
+def test_no_runtime_union_types_for_old_system_python():
+    """The hook runs under the system python3 (3.9 on macOS), where `int | float` raises."""
+    src = ROOT / "src" / "cashforecast" / "outputs" / "traceability.py"
+    calls = [
+        node
+        for node in ast.walk(ast.parse(src.read_text()))
+        if isinstance(node, ast.Call) and getattr(node.func, "id", "") == "isinstance"
+    ]
+    assert calls
+    assert not [c.lineno for c in calls if isinstance(c.args[1], ast.BinOp)]
 
 
 def test_committed_sample_memo_is_traceable():

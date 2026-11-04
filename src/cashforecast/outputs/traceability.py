@@ -61,7 +61,8 @@ def parse_pct(text: str) -> list[tuple[str, float, float]]:
 def _walk(obj, acc: list[float]) -> None:
     if isinstance(obj, bool):
         return
-    if isinstance(obj, int | float):
+    # Tuple, not `int | float`: the hook runs under the system python3, which may be < 3.10.
+    if isinstance(obj, (int, float)):  # noqa: UP038
         acc.append(float(obj))
     elif isinstance(obj, dict):
         for v in obj.values():

@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 from components.charts import COVENANT, FLOOR, INK, _layout, threshold_lines
-from components.kpis import kpi_row, m, status_badge
+from components.kpis import kpi_row, m, md, status_badge
 from components.loaders import artifact, select_run
 
 st.set_page_config(page_title="Liquidity & Risk", page_icon="💵", layout="wide")
@@ -70,6 +70,6 @@ if sc:
         f"the undrawn revolver: {m(worst['total_liquidity_at_low_point_usd'])}."
     )
     if worst["suggested_revolver_draw_usd"] > 0:
-        st.error(msg + f" Suggested revolver draw: {m(worst['suggested_revolver_draw_usd'])}.")
+        st.error(md(msg + f" Suggested revolver draw: {m(worst['suggested_revolver_draw_usd'])}."))
     else:
-        st.success(msg + " No draw needed.")
+        st.success(md(msg + " No draw needed."))
