@@ -2,12 +2,19 @@
 
 from __future__ import annotations
 
+import re
+
 import pandas as pd
 import streamlit as st
 
 
 def m(x: float, decimals: int = 1) -> str:
     return f"{'-' if x < 0 else ''}${abs(x) / 1e6:,.{decimals}f}M"
+
+
+def md(text: str) -> str:
+    """Escape $ for Streamlit markdown, which reads a pair of them as a LaTeX formula."""
+    return re.sub(r"(?<!\\)\$", r"\\$", text)
 
 
 def kpi_row(items: list[tuple[str, str, str | None]]) -> None:
@@ -27,11 +34,13 @@ def money_table(df: pd.DataFrame, money_cols: list[str], decimals: int = 1) -> p
 
 def status_badge(min_cash: float, floor: float, covenant: float) -> None:
     if min_cash < covenant:
-        st.error(f"Covenant breach: minimum cash {m(min_cash)} vs covenant {m(covenant)}")
+        st.error(md(f"Covenant breach: minimum cash {m(min_cash)} vs covenant {m(covenant)}"))
     elif min_cash < floor:
-        st.warning(f"Below internal floor: minimum cash {m(min_cash)} vs floor {m(floor)}")
+        st.warning(md(f"Below internal floor: minimum cash {m(min_cash)} vs floor {m(floor)}"))
     else:
         st.success(
-            f"Within limits: low point {m(min_cash)} is {m(min_cash - floor)} above "
-            f"the floor and {m(min_cash - covenant)} above the covenant"
+            md(
+                f"Within limits: low point {m(min_cash)} is {m(min_cash - floor)} above "
+                f"the floor and {m(min_cash - covenant)} above the covenant"
+            )
         )

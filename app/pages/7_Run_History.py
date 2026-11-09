@@ -6,7 +6,7 @@ import json
 
 import pandas as pd
 import streamlit as st
-from components.kpis import money_table
+from components.kpis import md, money_table
 from components.loaders import RUNS, list_runs
 
 st.set_page_config(page_title="Run History", page_icon="💵", layout="wide")
@@ -45,19 +45,19 @@ run = RUNS / rid
 tabs = st.tabs(["Memo", "Review", "Facts sheet", "Assumptions", "Downloads"])
 with tabs[0]:
     st.markdown(
-        (run / "memo.md").read_text()
+        md((run / "memo.md").read_text())
         if (run / "memo.md").exists()
         else "_No memo. Run `/cash-memo` in Claude Code._"
     )
 with tabs[1]:
     st.markdown(
-        (run / "review.md").read_text()
+        md((run / "review.md").read_text())
         if (run / "review.md").exists()
         else "_No independent review. `/forecast` runs the forecast-reviewer subagent._"
     )
 with tabs[2]:
     st.markdown(
-        (run / "facts.md").read_text() if (run / "facts.md").exists() else "_No facts sheet._"
+        md((run / "facts.md").read_text()) if (run / "facts.md").exists() else "_No facts sheet._"
     )
 with tabs[3]:
     st.json(json.loads((run / "assumptions.json").read_text()), expanded=False)
